@@ -379,7 +379,7 @@ console.log(transmogrify(5, 3, 2));
 > => 225
 
 
-# 9
+
 
 
 
