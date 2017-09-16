@@ -259,6 +259,141 @@ kristynsCloset[6] = "raybans";
 kristynsCloset[5] = "stained knit hat";
 
 // Number 5
+thomsCloset[0][0];
+
+// Number 6
+thomsCloset[1][1];
+
+// Number 7
+thomsCloset[2][2];
+
+// Number 8
+console.log("Thom is looking fierce in a " + thomsCloset[0][0] + ", " + thomsCloset[1][1] + ", and a pair of " + thomsCloset[2][2]);
+
+// Number 9
+thomsCloset[1][2] = "Footie Pajamas";
+
+
+// Print Greeting
+const printGreeting = (name) => {
+	console.log("Hello there, " + name + "!");
+};
+
+
+// Reverse word order
+const reverseWordOrder = (sentence) => {
+	let arr = [];
+	let newSentence = sentence.split(" ").reverse().join(" ");
+	return (newSentence);
+};
+
+
+// caculate
+const calculate = (num1, num2, operation) => {
+	if (operation === "add"){
+		return (num1 + num2);
+	}else if (operation === "sub"){
+		return (num1 - num2);
+	}else if (operation === "mult"){
+		return (num1 * num2);
+	}else if (operation === "div"){
+		return (num1 / num2);
+	}else if (operation === "exp"){
+		return (Math.pow(num1, num2));
+	}else {
+		return ("Operation invalid.");
+	};
+};
+
+
+// 1 / Print Cool
+const printCool = (name) => {
+	return (name + " is cool.");
+};
+
+
+// 2 / calculate cube
+const calculateCube = (num) => {
+	return (num * num * num);
+};
+
+
+// 3 / is a vowel
+const isAVowel = (letter) => {
+	if (letter === 'a' || 'u' || 'o' || 'e' || 'i' || 'A' || 'U' || 'O' || 'E' || 'I'){
+		return (true);
+	}else {
+		return (false);
+	};
+};
+
+
+// 4 / get two lengths
+const getTwoLengths = (string1, string2) => {
+	let finalArray = [string1.length, string2.length];
+	return(finalArray);
+};
+
+
+// 5 / get multiple lengths
+const getMultipleLengths = (stringArray) => {
+	let finalArray = [];	
+	for (i = 0; i < stringArray.length; i++){
+		finalArray[i] = stringArray[i].length;
+	}
+	return(finalArray);
+};
+
+
+// 6 / Max of three
+const maxOfThree = (num1, num2, num3) => {
+	let arr = [num1, num2, num3];
+	let highest = 0;
+	let highestNum = 0;
+	for (i = 0; i < 3; i++){
+		if ((arr[i] >= arr[i + 1]) && (arr[i] > highestNum)){
+			highest = i;
+			highestNum = arr[i];
+		};
+		if ((arr[i] >= arr[i - 1]) && (arr[i] > highestNum)){
+			highest = i;
+			highestNum = arr[i];
+		};
+		if ((arr[i] >= arr[i + 2]) && (arr[i] > highestNum)){
+			highest = i;
+			highestNum = arr[i];
+		};
+		if ((arr[i] >= arr[i - 2]) && (arr[i] > highestNum)){
+			highest = i;
+			highestNum = arr[i];
+		};
+	};
+	return (arr[highest]);
+};
+
+
+// 7 / print longest word
+const printLongestWord = (array) => {
+	let long = 0;
+	let longest = 0;
+	for (let i = 0; i < array.length; i++){
+		if (array[i].length > long){
+			longest = i;
+			long = array[i].length;
+		};
+	};
+	return (array[longest]);
+};
+
+
+// 8 / transmogrify
+const transmogrifier = (x, y, z) => {
+	let transmogrified = Math.pow((x * y), z);
+	return (transmogrified);
+};
+
+
+// Object Syntax
 
 
 
