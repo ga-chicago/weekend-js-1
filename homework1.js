@@ -245,3 +245,23 @@ const battle = (one, two) => {
 if (one.hp < 1) {console.log(one.name + " dies.")}
 if (two.hp < 1) {console.log(two.name + " dies.")}
 }
+
+const cat1 = {
+  name: "Elizabeth",
+  breed: "Persian",
+  age: 4
+}
+const cat2 = {
+  name: "Vincent",
+  breed: "Tortoise Shell",
+  age: 5
+}
+
+const combinecats = (one, two) => {
+return {
+  name: one.name + two.name,
+  breed: one.breed + two.breed,
+  age: one.age + two.age
+  }
+}
+
