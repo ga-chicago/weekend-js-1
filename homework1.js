@@ -198,18 +198,50 @@ const monster = {
    type: "plasm or ghost or something"
 }
 
-const swashbuckler {
-hp: 30;
-damage_min: 3;
-damage_max: 10;
-def: 15;
-att: 5;
+console.log(monster.name);
+monster.type = "creature";
+monster.age = 6;
+console.log(monster.age);
+
+
+const swashbuckler = {
+name: "Reckless Swashbuckler",
+hp: 30,
+damage_min: 1,
+damage_max: 30,
+def: 15,
+att: 7
 }
 
-const barbarian {
-hp: 60;
-damage_min: 6;
-damage_max: 15;
-def: 10;
-att: 5;
+const knight = {
+name: "Noble Knight",
+hp: 60,
+damage_min: 20,
+damage_max: 30,
+def: 10,
+att: 3
+}
+const RNG = (min, max) => {
+	return Math.random() * (max - min) + min;
+}
+
+const battle = (one, two) => {}
+//	while ((one.hp > 0) || (two.hp > 0)) {
+		//attack
+		if ((RNG(0,20) + one.att) > two.def ) { //scores a hit
+			const damage = RNG(one.damage_min, one.damage_max); //assign damage
+			console.log(one.name + " strikes " + two.name "for " + damage + " damage!!")
+			two.hp -= damage;
+		}
+		else { console.log(one.name + " swings wildly and misses!")} //miss
+	//retaliate
+		if ((RNG(0,20) + one.att) > two.def ) { //scores a hit
+			const damage = RNG(two.damage_min, two.damage_max); //assign damage
+			console.log(one.name + " strikes " + two.name "for " + damage + " damage!!")
+			one.hp -= damage;
+		}
+		else { console.log(one.name + " swings wildly and misses!")} //miss
+//	}
+if (one.hp < 1) {console.log(one.name + " dies.")}
+if (two.hp < 1) {console.log(one.name + " dies.")}
 }
