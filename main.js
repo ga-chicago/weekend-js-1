@@ -190,6 +190,7 @@ naturalNumberSum; // The result is 233168
 // Easy Does It
 
 // Create an array that contains three quotes and store it in a variable called quotes.
+const quotes = ["Nailed it!", "It's also a gun.", "Do you believe in destiny?"];
 
 
 
@@ -199,6 +200,10 @@ naturalNumberSum; // The result is 233168
 //   how do you access the 1st element in the array?
 //   Change the value of "Hello" to "World".
 //   Check the value of the array to make sure it updated the array.
+const randomThings = [1, 10, "Hello", true];
+randomThings[0]; // returns the value of the first element: 1
+randomThings[2] = "World";
+randomThings;
 
 
 
@@ -208,17 +213,27 @@ naturalNumberSum; // The result is 233168
 //   What would you write to access the 3rd element of the array?
 //   Change the value of "Github" to "Octocat"
 //   Add a new element, "Cloud City" to the array.
+const ourClass = ["Gizmo", "Zoom", "Github", "Slack"];
+ourClass[2]; // returns the value of the third element: "Github"
+ourClass[2] = "Octocat";
+ourClass.push("Cloud City");
 
 
 
 // Mix It Up
 
 // Given the following array const myArray = [5 ,10 ,500, 20]
-// using the push method, add the string "Egon" to the end of the array.
-// using a method, remove the string from the end of the array.
-// using the unshift method, add the string "Bob Marley" to the beginning of the array
-// using a different method, remove the string from the beginning of the array
-// use the reverse method on this array
+// 	 using the push method, add the string "Egon" to the end of the array.
+// 	 using a method, remove the string from the end of the array.
+// 	 using the unshift method, add the string "Bob Marley" to the beginning of the array
+// 	 using a different method, remove the string from the beginning of the array
+// 	 use the reverse method on this array
+const myArray = [5, 10, 500, 20];
+myArray.push("Egon");
+myArray.pop();
+myArray.unshift("Bob Marley");
+myArray.shift();
+myArray.reverse();
 
 
 
@@ -227,6 +242,14 @@ naturalNumberSum; // The result is 233168
 // Write an if..else statement:
 //   console.log little number if the number is entered is less than 100
 //   If the number entered is 100 or more, alert big number.
+let numberInput = 0;
+if (numberInput < 100){
+	console.log("little number");
+} else {
+	alert("big number");
+}
+numberInput = 50;
+numberInput = 101;
 
 
 
@@ -235,7 +258,17 @@ naturalNumberSum; // The result is 233168
 // Write an if...else if...else statement:
 //   console.log little number if the number entered is less than 5.
 //   If the number entered is more than 10, log big number.
-//   Otherwise, console.log "monkey". 
+//   Otherwise, console.log "monkey".
+let monkeyNumber = 2;
+if (monkeyNumber < 5){
+	console.log("little number");
+} else if (monkeyNumber > 10){
+	console.log("big number");
+} else {
+	console.log("monkey");
+}
+monkeyNumber = 15;
+monkeyNumber = 7;
 
 
 
@@ -280,6 +313,15 @@ const thomsCloset = [
 // Access one item from Thom's accessories array.
 // Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
 // Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
+console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
+const kristynShoe = kristynsCloset.shift();
+kristynsCloset.splice(5, 0, "raybans"); // array.splice(start, deleteCount, item1, item2, ...)
+kristynsCloset[4] = "stained knit hat";
+thomsCloset[0][0];
+thomsCloset[1][1];
+thomsCloset[2][1];
+console.log("Thom is looking fierce in a " + thomsCloset[0][0] + ", " + thomsCloset[1][1] + " and " + thomsCloset[2][1] + "!");
+thomsCloset[1][2] = "Footie Pajamas";
 
 
 
