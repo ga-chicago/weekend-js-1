@@ -242,11 +242,17 @@ let timer = 0;
 			const damage = RNG(two.damage_min, two.damage_max); //assign damage
       setTimeout(function(){ console.log(two.name + " strikes " + one.name + "for " + damage + " damage!!"); }, timer);
 			one.hp -= damage;
-		}
+      const temp = one.hp;
+      const temp2 = two.hp
+		  setTimeout(function(){ console.log(temp, temp2);}, timer)
+    }
    else { 
    setTimeout(function(){ console.log(one.name + " dodges nimbly!");}, timer) //miss
+      const temp = one.hp;
+      const temp2 = two.hp
+      setTimeout(function(){ console.log(temp, temp2);}, timer)
   }
-timer += 500
+timer += 500;
 }
 if (one.hp < 1) {setTimeout(function(){ console.log(one.name + " dies.");}, timer);}
 if (two.hp < 1) {setTimeout(function(){ console.log(two.name + " dies.");}, timer);}
