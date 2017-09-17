@@ -52,7 +52,7 @@ bankAccount = accumulator * 2
 let accumulator = 0;
 for (let i = 0; i < 1000; i++) { 
 if ( i % 3 == 0) { accumulator += i;}
-if ( i % 5 == 0) { accumulator += i;}
+else if ( i % 5 == 0) { accumulator += i;}
 }
 
 const randomThings = [1, 10, "Hello", true]
@@ -126,7 +126,7 @@ return string.split(" ").reverse().join(" ");
 
 const calculate = (num1, num2, operation) => {
 if (operation === "add") {return num1 + num2}
-if (operation === "sub") {return num1 + num2}
+if (operation === "sub") {return num1 - num2}
 if (operation === "mult") {return num1 * num2}
 if (operation === "div") {return num1 / num2}
 if (operation === "exp") {return Math.pow(4,3)}
