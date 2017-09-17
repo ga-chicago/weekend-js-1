@@ -26,10 +26,17 @@
 //   store the value of firstVariable into a new variable called secondVariable
 //   change the value of secondVariable to a string.
 //   What is the value of firstVariable?
+let firstVariable = "Hello World";
+firstVariable = 8;
+let secondVariable = firstVariable;
+secondVariable = "Greetings World";
+firstVariable; // The value equals the number 8.
 
 // Create a variable called yourName and set it equal to your name as a string.
 //   Write an expression that takes the string "Hello, my name is " and the variable yourName so that it returns a new string with them concatenated.
 //   ex: Hello, my name is Jean Valjean
+const yourName = "Sam Sheehan";
+console.log("Hello, my name is " + yourName);
 
 
 
