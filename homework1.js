@@ -216,8 +216,8 @@ att: 7
 const knight = {
 name: "Noble Knight",
 hp: 400,
-damage_min: 30,
-damage_max: 40,
+damage_min: 40,
+damage_max: 50,
 def: 10,
 att: 3
 }
