@@ -206,8 +206,8 @@ console.log(monster.age);
 
 const swashbuckler = {
 name: "Reckless Swashbuckler",
-hp: 30,
-damage_min: 1,
+hp: 300,
+damage_min: 10,
 damage_max: 30,
 def: 15,
 att: 7
@@ -215,35 +215,41 @@ att: 7
 
 const knight = {
 name: "Noble Knight",
-hp: 60,
-damage_min: 20,
-damage_max: 30,
+hp: 600,
+damage_min: 50,
+damage_max: 60,
 def: 10,
 att: 3
 }
 const RNG = (min, max) => {
 	return Math.floor( Math.random() * (max - min) + min );
 }
-
+//setTimeout(function(){ reshuffle(); }, timer)
 const battle = (one, two) => {
+let timer = 0;
 	while ((one.hp > 0) && (two.hp > 0)) {
 		//attack
 		if ((RNG(0,20) + one.att) > two.def ) { //scores a hit
 			const damage = RNG(one.damage_min, one.damage_max); //assign damage
-			console.log(one.name + " strikes " + two.name + "for " + damage + " damage!!")
+      setTimeout(function(){ console.log(one.name + " strikes " + two.name + "for " + damage + " damage!!"); }, timer);
 			two.hp -= damage;
 		}
-		else { console.log(two.name + " dodges nimbly!")} //miss
-	//retaliate
+		else { 
+    setTimeout(function(){ console.log(two.name + " dodges nimbly!");}, timer); //miss
+	}
+  //retaliate
 		if ((RNG(0,20) + two.att) > one.def ) { //scores a hit
 			const damage = RNG(two.damage_min, two.damage_max); //assign damage
-			console.log(two.name + " strikes " + one.name + "for " + damage + " damage!!")
+      setTimeout(function(){ console.log(two.name + " strikes " + one.name + "for " + damage + " damage!!"); }, timer);
 			one.hp -= damage;
 		}
-		else { console.log(one.name + " dodges nimbly!")} //miss
-	}
-if (one.hp < 1) {console.log(one.name + " dies.")}
-if (two.hp < 1) {console.log(two.name + " dies.")}
+   else { 
+   setTimeout(function(){ console.log(one.name + " dodges nimbly!");}, timer) //miss
+  }
+timer += 500
+}
+if (one.hp < 1) {setTimeout(function(){ console.log(one.name + " dies.");}, timer);}
+if (two.hp < 1) {setTimeout(function(){ console.log(two.name + " dies.");}, timer);}
 }
 
 const cat1 = {
