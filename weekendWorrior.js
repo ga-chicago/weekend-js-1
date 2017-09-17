@@ -142,25 +142,35 @@ ourClass.push('Cloud City')
 
 //Mix It Up
 
+const myArray = [5 ,10 ,500, 20]
 
-
-
+myArray.push('Egon')
+myArray.pop('Egon')
+myArray.unshift("Bob Marley")
+myArray.shift("Bob Marley")
+myarray.reverse()
 
 
 
 //Biggie Smalls
 
-
-
-
-
+if(number < 101) {
+	console.log('little number')
+} else {
+	console.log('big number')
+}
 
 
 
 //Monkey in the Middle
 
-
-
+if(number < 5) {
+	console.log('little number')
+} else if(number > 10) {
+	console.log('big number')
+} else {
+	console.log('monkey')
+}
 
 
 
@@ -168,27 +178,185 @@ ourClass.push('Cloud City')
 
 //What's in Your Closet?
 
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+
+console.log('Kristyn is rocking that ' + kristynsCloset[2] + ' today!')
+
+let kristynShoe = '';
+
+kristynShoe = kristynsCloset.splice(0, 1)
+
+kristynsCloset.splice(5, 0, 'raybans')
+
+kristynsCloset[5] = "stained knit hat"
+
+thomsCloset[0][0]
+thomsCloset[2][1]]
+console.log('Thom is looking fierce in a ' + thomsCloset[0][0] + ", " + thomsCloset[1][0] + ', and' + thomsCloset[0][0] + '!')
+thomsCloset[1][2] = 'Footie Pajamas'
 
 
 //Functions
-//printGreeting
+//printGreeting NEEDS WORK
 
+const printGreeting = (name) => {
 
+}
 
 
 
 
 //reverseWordOrder
 
+const reverseWordOrder = (string) => {
+	string.split('').reverse().join('').split(' ').reverse().join(' ')
+
+	console.log(string)
+
+}
 
 
 
 
 //calculate
 
+const add = (x, y) => {
+	return x + y
+}
+
+const sub = (m, n) => {
+	return m - n
+}
+
+const mult = (m, n) => {
+	return m * n
+}
+
+const div = (m, n) => {
+	return m / n
+}
+
+const exp = (m, n) => {
+	return Math.pow(x, y)
+}
 
 
 
+const calculate = (num1, num2, operation) => {
+
+	let result = operation(num1, num2)
+
+ 	return result
+ }
+
+
+// #1
+
+const printCool = (name) => {
+	return name + ' is cool'
+}
+
+
+// #2
+
+const calculateCube = (numba) => {
+	let cube = Math.pow(numba, 3)
+
+	return cube
+}
+
+
+// #3 NEEDS WORK
+
+
+const isAVowel = (sureThing) => {
+
+	runItThrough = sureThing.indexOf('a') || sureThing.indexOf('e') || sureThing.indexOf('i') || sureThing.indexOf('o') || sureThing.indexOf('u');
+
+	if(runItThrough !== -1){
+		return true
+	} else {
+		return false
+	}
+	
+}
+
+
+// #4
+
+const getTwoLengths = (a, b) => {
+	let twoLengths = [a.length, b.length]; 
+
+	return twoLengths
+
+}
+
+getTwoLengths('Pennywise','clown')
+
+
+
+
+// #5
+
+let measures = [];
+
+const getMultipleLengths = (arrayOfStrings) => {
+	for(i = 0; i < arrayOfStrings.length; i++){
+		let conversion = arrayOfStrings[i]
+
+		measures.push(conversion.length)
+	}
+	return measures
+
+}
+
+
+getMultipleLengths(['banana', 'mango', 'pineapple'])
+
+
+// #6
+
+
+const maxOfThree = (bryanne, ofFreaking, tarth) => {
+
+	let hound = [bryanne, ofFreaking, tarth]
+
+	return Math.max(...hound)
+
+
+}
+
+maxOfThree(5,2,8)
 
 
 
