@@ -37,7 +37,7 @@ for (let i = 5; i <= 100; i+=5) { console.log("i found a " + i + ". high five!")
 
 for (let i = 0; i <= 100; i++) { 
 if ( i % 3 == 0) {console.log("this is " i + ". 3 is a crowd");}
-if ( i % 5 == 0) { console.log("i found a " + i + ". high five!");}x
+if ( i % 5 == 0) { console.log("i found a " + i + ". high five!");}
 }
 
 const array = [1,2,3,4,5,6,7,8,9,10];
