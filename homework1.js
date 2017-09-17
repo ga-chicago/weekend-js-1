@@ -107,7 +107,7 @@ const thomsCloset = [
 
 console.log("Kristyn's rocking that " + kristynsCloset[2] " today!")
 kristynsCloset.shift();
-kristynsCloset.splice(6, "Raybans")
+kristynsCloset.splice(6, 0, "Raybans")
 kristynsCloset[5] = "stained knit hat"
 
 
