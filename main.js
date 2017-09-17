@@ -6,9 +6,16 @@
 // Conceptual Questions
 
 // How do we assign a value to a variable?
-// How do we change the value of a variable?
-// How do we assign an existing variable to a new variable?
+	// First you set up the variable with either 'const' or 'let', depending on whether or not that variable's value could change later on.
+	// After typing out the name of the variable, place an equals sign (=) and then assign what the value is in accordance to its data type.
 
+// How do we change the value of a variable?
+	// To change the value without straight up reassigning the entire variable, then make the variable equal itself plus whatever changes to it you want.
+	// Example: numberVariable = numberVariable + 7; (calling numberVariable from then on would return the resulting sum of it plus 7)
+
+// How do we assign an existing variable to a new variable?
+	// If the variable was set up with 'const', then in most cases you will need to change it to 'let' so its value can change later on in the file.
+	// Otherwise, just reassign a value to the variable in the same or similar manner as it was first made (i.e. variableName = newValue;).
 
 
 // Strings
@@ -29,11 +36,11 @@
 // Booleans
 
 // Using the provided variable definitions, replace the blanks with a mathematical or boolean operator that evaluates the expression to true. 👋
-  const a = 4;
-  const b = 53;
-  const c = 57;
-  const d = 16;
-  const e = 'Kevin';
+	const a = 4;
+	const b = 53;
+	const c = 57;
+	const d = 16;
+	const e = 'Kevin';
 // 1) a _ b;
 // 2) c _ d;
 // 3) 'Name' ___ 'Name';
