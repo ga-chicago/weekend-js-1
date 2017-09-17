@@ -394,43 +394,103 @@ const transmogrifier = (x, y, z) => {
 
 
 // Object Syntax
+// const to set a constant variable, then the name of the object
+// then an equals, followed by an open curly bracket, inside you
+// set properties by following them with a colon after which you
+// put what that property is, and in a list of them you follow
+// each one with a comma. then finish it off with a curly bracket
+// and a semicolon
+const myObject = {prop1: 1,
+				  prop2: "2"};
 
 
 
+// Me
+// Number 1
+const me = {};
+
+// Number 2
+const me = {name: "Ben", age: 11, email: "bakutis.ben@gmail.com"};
+
+// Number 3
+me.name;
+
+// Number 4
+me.age = 1000;
+
+// Number 5
+me.age;
+
+// Number 6
+me["age of residence"] = "naperville";
+
+// Number 7
+me["age of residence"];
+
+
+// Slimer
+const monster = {
+	name: "Slimer",
+	color: "greenish",
+	type: "plasm or ghost or something"
+}
+
+// Number 1
+console.log(monster.name);
+
+// Number 2
+monster.type = "creature";
+
+// Number 3
+monster.age = 6;
+
+
+// Ogres
+const adventurer = {name: "Mat", hitpoints: 100, attack: 15, defence: 12};
+const ogre = {name: "Shrek", hitpoints: 150, attack: 8, defence: 25};
+const battle = (player1, player2) => {
+	alert("Battle Initiated! Good Luck!");
+	let winner = "";
+	while (player1.hitpoints > 0 && player2.hitpoints > 0){
+		let player1attack = getAttack(player1.attack) - getDefence(player2.defence);
+		let player2attack = getAttack(player2.attack) - getDefence(player1.defence);
+		player1.hitpoints -= player2attack;
+		alert(player2.name + " attacks " + player1.name + " and does " + player2attack + " damage!     " + player1.name + " now only has " + player1.hitpoints + " hitpoints left!");
+		player2.hitpoints -= player1attack;
+		alert(player1.name + " attacks " + player2.name + " and does " + player1attack + " damage!     " + player2.name + " now only has " + player2.hitpoints + " hitpoints left!");
+		if (player1.hitpoints <= 0){
+			winner = player2.name;
+		}else if (player2.hitpoints <= 0){
+			winner = player1.name;
+		};
+	};
+	return (alert(winner + " is victorious!"));
+};
+const getAttack = (attack) => {
+	min = Math.ceil(attack - 2);
+	max = Math.floor(attack + 2);
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+const getDefence = (defence) => {
+	min = Math.ceil(defence / 4);
+	max = Math.floor(defence / 3);
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
 
 
+// Cat Combinator
+// Number 1
+const cat1 = {name: "Pixel", breed: "Russian Blue", age: 9};
 
+// Number 2
+const cat2 = {name: "Julian", breed: "Siamese", age: 10};
 
+// Number 3 
+const combineCats = (cat1, cat2) => {
+	const cat3 = {name: cat1.name + cat2.name, breed: cat1.breed + "-" + cat2.breed, age: 1};
+	return (cat3)
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Number 4
+console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
