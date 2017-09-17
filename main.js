@@ -48,13 +48,20 @@ console.log("Hello, my name is " + yourName);
 	const c = 57;
 	const d = 16;
 	const e = 'Kevin';
-// 1) a _ b;
-// 2) c _ d;
+// 1) a ___ b;
+	a < b;
+// 2) c ___ d;
+	c > d;
 // 3) 'Name' ___ 'Name';
-// 4) a _ b ___ c;
-// 5) a _ a ___ d;
+	'Name' === 'Name';
+// 4) a ___ b ___ c;
+	a < b < c;
+// 5) a ___ a ___ d;
+	a < a + d;
 // 6) e ___ 'Kevin';
+	e === 'Kevin';
 // 7) 48 ___ '48';
+	48 !== '48';
 
 
 
@@ -62,6 +69,14 @@ console.log("Hello, my name is " + yourName);
 
 // Write code that will print out "mooooo" if the variable animal is equal to cow.
 // Change your code so that if the variable animal is anything other than a cow, your should print out "Hey! You're not a cow."
+let animal = "";
+if (animal === "cow"){
+	console.log("mooooo");
+} else {
+	console.log("Hey! You're not a cow.");
+}
+animal = "cow";
+animal = "dog";
 
 
 
@@ -70,6 +85,15 @@ console.log("Hello, my name is " + yourName);
 // Write a variable that will hold a person's age.
 // Write code that will print out "Here are the keys", if the age is 16 years or older.
 // Change your code so that if the age is younger than 16, a message will print "Sorry, you're too young."
+let personAge = 18;
+if (personAge >= 16){
+	console.log("Here are the keys.");
+} else {
+	console.log("Sorry, you're too young.");
+}
+personAge = 12;
+personAge = 16;
+personAge = 21;
 
 
 
@@ -78,6 +102,15 @@ console.log("Hello, my name is " + yourName);
 // Write code that will print out all the numbers in the range 0 - 10.
 // Write code that will print out all the numbers in the range 10 - 4000.
 // Write code that will print out every other number in the range 10 - 4000.
+for (let a = 0; a < 11; a++){
+	console.log(a);
+};
+for (a = 10; a < 4001; a++){
+	console.log(a);
+};
+for (a = 10; a < 4002; a += 2){
+	console.log(a);
+};
 
 
 
@@ -89,6 +122,9 @@ console.log("Hello, my name is " + yourName);
 //   2 is an even number
 //   4 is an even number
 //   6 is an even number
+for (let b = 2; b < 102; b += 2){
+	console.log(b + " is an even number");
+};
 
 
 
@@ -105,15 +141,35 @@ console.log("Hello, my name is " + yourName);
 //   I found a 6. Three is a crowd
 //   I found a 9. Three is a crowd
 //   I found a 10. High five!
+for (let c = 1; c < 101; c++){
+	if (0 === c % 5 && c % 3 === 0){
+		console.log("I found a " + c + ". High five!");
+		console.log("I found a " + c + ". Three is a crowd");
+	} else if (c % 5 === 0){
+		console.log("I found a " + c + ". High five!");
+	} else if (c % 3 === 0){
+		console.log("I found a " + c + ". Three is a crowd");
+	}
+};
 
 
 
 // Savings account
 
 // Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
-//   Check your work! Your banck_account should have $55 in it.
+//   Check your work! Your bank_account should have $55 in it.
 // You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
-//   Check your work! Your banck_account should have $10,100 in it.
+//   Check your work! Your bank_account should have $10,100 in it.
+let bank_account = 0;
+for (let d = 1; d < 11; d++){
+	bank_account += d;
+};
+console.log(bank_account);
+bank_account = 0;
+for (d = 1; d < 101; d++){
+	bank_account += d * 2;
+};
+console.log(bank_account);
 
 
 
@@ -122,7 +178,13 @@ console.log("Hello, my name is " + yourName);
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 // Find the sum of all the multiples of 3 or 5 below 1000.
 //   👏 You just solved Project Euler problem 1! 👏
-
+let naturalNumberSum = 0;
+for (let e = 1; e < 1000; e++){
+	if (0 === e % 3 || e % 5 === 0){
+		naturalNumberSum += e;
+	}
+};
+naturalNumberSum; // The result is 233168
 
 
 // Easy Does It
