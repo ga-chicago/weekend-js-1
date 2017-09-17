@@ -256,7 +256,15 @@ timer += 500;
 }
 if (one.hp < 1) {setTimeout(function(){ console.log(one.name + " dies.");}, timer);}
 if (two.hp < 1) {setTimeout(function(){ console.log(two.name + " dies.");}, timer);}
+refresh();
 }
+
+const refresh = () => {
+swashbuckler.hp = 300;
+knight.hp = 500;
+}
+
+
 
 const cat1 = {
   name: "Elizabeth",
