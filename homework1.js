@@ -215,9 +215,9 @@ att: 7
 
 const knight = {
 name: "Noble Knight",
-hp: 500,
-damage_min: 50,
-damage_max: 60,
+hp: 400,
+damage_min: 30,
+damage_max: 40,
 def: 10,
 att: 3
 }
@@ -261,7 +261,7 @@ refresh();
 
 const refresh = () => {
 swashbuckler.hp = 300;
-knight.hp = 500;
+knight.hp = 400;
 }
 
 
