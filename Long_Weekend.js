@@ -329,4 +329,214 @@ console.log('Thom is looking fierce in a ' + thomsCloset[0][1] + ', ' + thomsClo
 
 thomsCloset[2][0] = 'Footie Pajamas';
 
+//Functions
 
+//initial practice
+
+const printGreeting = (name) => {
+	return ('Hello there, ' + name + '!');
+};
+
+const reverseWordOrder = (text) => {
+	let newText = text.split(' ').reverse();
+	return newText.join(' ');
+}
+
+const calculate = (num1, num2, opt) => {
+	if (opt === 'add') {
+		return num1 + num2;
+	} else if (opt === 'sub') {
+		return num1 - num2;
+	} else if (opt === 'mult') {
+		return num1 * num2;
+	} else if (opt === 'div') {
+		return num1 / num2;
+	} else if (opt === 'exp') {
+		return (num1 ** num2);
+	} else {
+		return 'fool!';
+	}
+}
+
+//1
+
+const printCool = (name) => {
+	return (name + " is cool");
+}
+
+//2
+
+const calculateCube = (num) => {
+	return (num ** 3);
+}
+
+//3
+
+const isAVowel = (char) => {
+	let set = char.toLowerCase();
+	if (set.length === 1) {
+		if (set === 'a' || set === 'e' || set === 'i' || set === 'o' || set === 'u') {
+			return true;
+		} else {
+			return false;
+		}
+	} else {
+		return 'please try again';
+	}
+}
+
+//4
+
+const getTwoLengths = (strOne, strTwo) => {
+	let arr = [];
+	arr.push(strOne.length);
+	arr.push(strTwo.length);
+	return arr;
+}
+
+//5
+
+const getMultipleLengths = (arrayStrings) => {
+	const arraySolution = [];
+	for (let v in arrayStrings) {
+		arraySolution.push(arrayStrings[v].length);
+	}
+	return arraySolution;
+}
+
+//6
+
+const maxOfThree = (num1, num2, num3) => {
+	if (num1 >= num2) {
+		if (num1 >= num3) {
+			return num1;
+		} else {
+			return num3;
+		}
+	}
+	if (num2 >= num1) {
+		if (num2 >= num3) {
+			return num2;
+		} else {
+			return num3;
+		}
+	}
+}
+
+//7
+
+const printLongestWord = (collect) => {
+	let longestWord = '';
+	for (let i = 0; i < collect.length; i++){
+		if (collect[i].length > longestWord.length){
+			longestWord = collect[i];
+		};
+	}
+	return longestWord;
+}
+
+//8
+
+const transmogrifier = (x, y, z) => {
+	let prod = x * y;
+	return Math.pow(prod, z);
+}
+
+//syntax
+
+{} , curly braces define the object
+const , objects are defined as constant variables
+: , within an object, a colon separates a property and the value
+of the corresponding property
+. , in dot notation, a dot separating the name of an object and
+that objects property can call a value
+[] , in bracket notation, brackets can enclose an objects value
+on the left side of an equation and the property on its right
+
+//Me
+
+const me = {};
+
+me.name = 'Tom Murphy';
+me.age = 28;
+me.email = 'tom.louis.murphy@gmail.com';
+
+me.name = 'Tom Murphy';
+
+me['age'] = 1000;
+
+me.age = 1000;
+
+me['place of residence'] = 'north haven, connecticut';
+
+//Slimer
+
+const monster = {
+   name: "Slimer",
+   color: "greenish",
+   type: "plasm or ghost or something"
+}
+
+console.log(monster.name);
+monster.type = 'creature';
+monster.age = 6;
+
+//Ogres
+
+const adventurer = {
+	name: 'blayne',
+	hitpoints: 100,
+	weapon: 'wooden sword',
+	woodenSwordAttack() {
+		ogre.hitpoints -= 5;
+		return 'Ogre now has ' + ogre.hitpoints + ' hit points.'
+	}
+}
+
+const ogre = {
+	name: 'stumpy',
+	hitpoints: 500,
+	weapon: 'big rock',
+	rockAttack() {
+		adventurer.hitpoints -= 50;
+		return 'Adventurer now has ' + adventurer.hitpoints + ' hit points.'
+	}
+}
+
+const battle = () => {
+	while (adventurer.hitpoints > 0 && ogre.hitpoints > 0) {
+		adventurer.woodenSwordAttack();
+		ogre.rockAttack();
+		console.log(adventurer.hitpoints);
+		console.log(ogre.hitpoints);
+	} if (adventurer.hitpoints <= 0) {
+		return adventurer.name + ' fought bravely, but he has perished.'	
+	} if (ogre.hitpoints <= 0) {
+		return ogre + ' fought bravely, but he has perished.'
+	}
+}
+
+//Cat Combinator
+
+const cat1 = {
+	name: 'scratch',
+	breed: 'tabby',
+	age: 6
+}
+
+console.log(cat1.age);
+console.log(cat1.breed);
+
+const cat2 = {
+	name: 'patch',
+	breed: 'persian',
+	age: 8
+}
+
+const combineCats = (mama, papa) => {
+	let cat3 = {};
+	cat3.name = cat1.name + cat2.name;
+	cat3.age = 1;
+	cat3.breed = cat1.breed + '-' + cat2.breed;
+	return cat3;
+}
