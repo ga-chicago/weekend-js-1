@@ -491,6 +491,18 @@ console.log(transmogrify(5, 3, 2));
 
 // List and describe each individual piece of syntax that we use to construct an object. Don't leave anything out! The list is finite.
 //   Example: {} curly braces define the object.
+const objectName = {
+	prop1: value1,
+	prop2: value2,
+	prop3: value3
+};
+console.log("const - declares the object in the file.");
+console.log("objectName - the assigned name for the entire object.");
+console.log("{} - contains the properties and associated values that define what the object is (put semi-colon after the close bracket to indicate that the object is finished being defined).");
+console.log("prop - the key attributes/characteristics/functions/properties that are present in the object.");
+console.log(": - colons separate the key's (prop's) name from it's associated value.");
+console.log("value - the associated values to each key prop that provide specific details on what configuration/type of attribute/characteristic/function/property it is.");
+console.log(", - commas separate each key-value pair from each other so as to not confuse how they should be read in the code (the last value doesn't have a comma).");
 
 // Me
 
@@ -504,6 +516,17 @@ console.log(transmogrify(5, 3, 2));
 // Using dot notation, verify that age has been updated.
 // Add a key to this object called: "place of residence" and give it a value of your hometown. Note that the key has spaces, therefore you cannot use dot notation.
 // Access the value of "place of residence"
+const me = {
+	name: "Sam Sheehan",
+	age: 25,
+	email: "ssheehan1210@yahoo.com"
+};
+me.name;
+me.age = 1000;
+me.age;
+me['place of residence'] = "Springfield";
+me['place of residence'];
+
 
 // Slimer
 
@@ -516,7 +539,11 @@ const monster = {
 //   What would you write to access the name and console.log it?
 //   What would you write to change the type to 'creature' (without changing it inside the object)
 //   What would you write to add a key to the object called age, and set the age to 6?
-//   console.log the object to make sure type is creature, and age is 6
+//   console.log the object to make sure type is creature, and age is 6.
+console.log(monster.name);
+monster.type = "creature";
+monster.age = 6;
+console.log(monster.age);
 
 // Ogres
 
@@ -528,3 +555,91 @@ const monster = {
 //     When your adventurer's hitpoints reach 0 the game is over.
 //     When your ogre's hitpoints reach 0 the game is over.
 //   If you want to provide input to the game, you can run it in the Chrome console (but that isn't strictly necessary for now).
+let adventurer = {
+	name: "Thendrell Davenport",
+	hitpoints: 30,
+	weapons: [{
+		weaponName: "scimitar (right hand)",
+		weight: "light",
+		damage: 15
+	},
+	{
+		weaponName: "scimitar (left hand)",
+		weight: "light",
+		damage: 15
+	}],
+	speed: 3,
+	playerDamageOutput() {
+		let totalPlayerDamageOutput = 0;
+		for (h = 0; h < adventurer.weapons.length; h++){
+			totalPlayerDamageOutput += adventurer.weapons[h].damage;
+		};
+		return totalPlayerDamageOutput;
+	}
+};
+
+let ogre = {
+	name: "Drunk Ogre",
+	hitpoints: 60,
+	weapons: [{weaponName: "giant log", weight: "heavy", damage: 25}],
+	speed: 1,
+	ogreDamageOutput() {
+		let totalOgreDamageOutput = 0;
+		for (i = 0; i < ogre.weapons.length; i++){
+			totalOgreDamageOutput += ogre.weapons[i].damage;
+		};
+		return totalOgreDamageOutput;
+	}
+};
+
+const battleEngaged = (player, enemy) => {
+	// set up turn order based on speed
+	let turnOrder = [];
+	let playerHP = player.hitpoints;
+	let enemyHP = enemy.hitpoints
+	if (player.speed > enemy.speed){
+		turnOrder.push(player);
+		turnOrder.push(enemy);
+	} else {
+		turnOrder.push(enemy);
+		turnOrder.push(player);
+	}
+
+	// give current hp of combatants and commence the battle
+	console.log("Beginning battle phase. Player HP: " + playerHP + ". Enemy HP: " + enemyHP + ".");
+
+	// set up loop for fastest combatant to deplete other combatant hp based on damage output, then have other combatant do the same
+	// return the final value based on who loses all their hp first
+	// if both live, then print their current hp
+	for (j = 0; j < turnOrder.length; j++){
+		if (turnOrder[j] === player){
+			let enemyDamageTaken = player.playerDamageOutput();
+			enemyHP -= enemyDamageTaken;
+			if (enemyHP === 0){
+				return "Battle over. " + enemy.name + " has been defeated. VICTORY";
+			} else {
+				console.log("Player has finished attacking. Player HP: " + playerHP + ". Enemy HP: " + enemyHP + ".");
+			}
+		} else if (turnOrder[j] === enemy) {
+			let playerDamageTaken = enemy.ogreDamageOutput();
+			playerHP -= playerDamageTaken;
+			if (playerHP === 0){
+				return "Battle over. " + player.name + " has died. GAME OVER";
+			} else {
+				console.log("Enemy has finished attacking. Player HP: " + playerHP + ". Enemy HP: " + enemyHP + ".");
+			}
+		}
+	};
+
+	// if both live, then print their current hp.
+	if (playerHP > 0 && enemyHP > 0){
+		player.hitpoints = playerHP;
+		enemy.hitpoints = enemyHP
+		console.log("Current battle phase completed. Player HP: " + playerHP + ". Enemy HP: " + enemyHP + ". Engage the next battle phase when ready...");
+	}
+};
+
+battleEngaged(adventurer, ogre);
+console.log(adventurer.hitpoints);
+console.log(ogre.hitpoints);
+
