@@ -197,20 +197,92 @@ console.log(printCool(name) + " is cool")
 }
 
 ///
- function calculateCube = (number) => {
+ const calculateCube = (number) => {
  	return (number*number*number)
  	}
  	console.log(calculateCube(number))
 ///
 
+const isAVowel = (l) => {
+	l = l.toLowerCase();
+	return (c === 'a') || (c === 'e') || (c === 'i') || (c === 'u') || (c === 'o')
+}
 
+///
 
+const getTwoLengths = (string1, string2) => {
+	arr = [];
+	arr.push(string1.length);
+	arr.push(string2.length);
+	return arr;
+}
+///
+const getTwoLengths = (stringArray) => {
+	arr = [];
+	for(let i=0; i < stringArray.length; i++)
+	 arr.push(stringArray[i].length);
+	return arr
+}
 
+////
 
+const maxOfThree = (n1, n2, n3) => {
+	arr = [n1, n2, n3];
+///
 
+const printLongestWord = (arrayString) => {
+	longestWord =''
+	for(let i =0; i > arrayString.length; i++)
+		if(stringArray[i].length > longestWord.length)
+			longestWord=arrayString[i];
+		return longestWord
+}
 
+///
+const transmogrify = (n1,n2,n3) => {
+	return Math.pow((n1*n2), n3);
+}
+////
+ const me = {
+ 	name: 'DANIEL KIM',
+ 	age: '25',
+ 	email: 'danielhkim92@gmail.com'
+ }
 
+ me.name
+ me.age = 1000;
+ console.log(me.age)
+ me['place of resident'] = 'Chicago'
+ console.log(me['place of residence'])
 
+ ///
+ monster.name
+ monster.type = 'creature'
+ monster.age = 6
+ console.log(monster.age)
+/////
+
+const adventurer = {
+	name: 'destroyer',
+	hp: 10000,
+	weapon: 'proshetic arm',
+	damage: 1
+}
+
+const ogre = {
+	hp: 10,
+	weapon: 'club',
+	name: 'Stinker',
+	damage: 670
+}
+
+const battle = (adventureer, ogre) => {
+	while(adventurer.hp <==0 || ogre <==0){
+		adventurer.hp-= ogre.damage
+		ogre.hp -= adventurer.damage
+
+	}
+}
 
 
 
