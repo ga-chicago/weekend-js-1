@@ -583,6 +583,44 @@ const battle = () => {
 	reset()
 };
 
+//# Extra Stuff
+//## Cat Combinator 
+//###
+
+// 1. 
+
+
+
+const mama = {
+	name: "fifi",
+	breed: "ginger",
+	age: 6
+};
+
+
+// 2. 
+const papa = {
+	name: "bob", 
+	breed: "british shorthair",
+	age: 8
+};
+
+// 3.
+
+const combineCats = (cat1, cat2) => {
+	console.log(cat1);
+	console.log(cat2);
+}
+
+// 4.
+
+const catCombinator = (cat1, cat2) => {
+	console.log({
+		name: cat1.name + cat2.name,
+		age: 1,
+		breed: cat1.breed + "-" + cat2.breed
+	});
+};
 
 
 
