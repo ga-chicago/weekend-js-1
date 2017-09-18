@@ -89,27 +89,35 @@ for (let i = 0; i = -100; i--) {
 }
 
 
-// Give Me Five NEEDS WORK
+// Give Me Five
 
-for (let i = 0; i > -101; i--) {
-	if( i) {
-		return 'I found ' i + ' Hight five!!'
+for (let i = 1; i < 101; i++) {
+	if(i % 5 === 0) {
+		console.log('I found a ' + i + ' Hight five!!')
+	} else if(i % 3 === 0) {
+		console.log('I found a ' + i + ' Three is a crowd')
 	}
 }
 
-//Savings account NEEDS WORK 
+//Savings account  
 
 let bankAccount = 0;
 for(let i = 0; i < 11; i++){
-		return bankAccount += i
+		console.log(bankAccount += i)
 	}
 
 
 
 
-//Multiples of 3 and 5
+//Multiples of 3 and 5 
+let euler = 0;
 
+for (let i = 0; i < 1001; i++) {
 
+	if(i % 5 === 0 || i % 3 === 0) {
+		console.log(euler += i)
+	}
+}
 
 
 //Easy Does It
@@ -227,10 +235,10 @@ thomsCloset[1][2] = 'Footie Pajamas'
 
 
 //Functions
-//printGreeting NEEDS WORK
+//printGreeting 
 
 const printGreeting = (name) => {
-
+	alert(name + ', James ' + name + ' ...not Bond')
 }
 
 
@@ -296,14 +304,12 @@ const calculateCube = (numba) => {
 }
 
 
-// #3 NEEDS WORK
+// #3 
 
 
 const isAVowel = (sureThing) => {
 
-	runItThrough = sureThing.indexOf('a') || sureThing.indexOf('e') || sureThing.indexOf('i') || sureThing.indexOf('o') || sureThing.indexOf('u');
-
-	if(runItThrough !== -1){
+	if(sureThing === 'a' || sureThing === 'e' || sureThing ==='i' || sureThing === 'o' || sureThing === 'u') {
 		return true
 	} else {
 		return false
@@ -478,6 +484,10 @@ const fight = (turn) => {
 
 
 fight('hero')
+
+
+
+
 
 
 
