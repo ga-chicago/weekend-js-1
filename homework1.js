@@ -231,7 +231,7 @@ let timer = 0;
 		//attack
 		if ((RNG(0,20) + one.att) > two.def ) { //scores a hit
 			const damage = RNG(one.damage_min, one.damage_max); //assign damage
-      setTimeout(function(){ console.log(one.name + " strikes " + two.name + "for " + damage + " damage!!"); }, timer);
+      setTimeout(function(){ console.log(one.name + " strikes " + two.name + " for " + damage + " damage!!"); }, timer);
 			two.hp -= damage;
 		}
 		else { 
@@ -240,7 +240,7 @@ let timer = 0;
   //retaliate
 		if ((RNG(0,20) + two.att) > one.def ) { //scores a hit
 			const damage = RNG(two.damage_min, two.damage_max); //assign damage
-      setTimeout(function(){ console.log(two.name + " strikes " + one.name + "for " + damage + " damage!!"); }, timer);
+      setTimeout(function(){ console.log(two.name + " strikes " + one.name + " for " + damage + " damage!!"); }, timer);
 			one.hp -= damage;
       const temp = one.hp;
       const temp2 = two.hp
