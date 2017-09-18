@@ -93,15 +93,15 @@ for (let i = 0; i = -100; i--) {
 
 for (let i = 0; i > -101; i--) {
 	if( i) {
-		return 'I found ' i + 'Hight five!!'
+		return 'I found ' i + ' Hight five!!'
 	}
 }
 
 //Savings account NEEDS WORK 
 
-let bankAccount = [0];
-for(let i = 0; i = 11; i++){
-		bankAccount += i
+let bankAccount = 0;
+for(let i = 0; i < 11; i++){
+		return bankAccount += i
 	}
 
 
@@ -353,13 +353,131 @@ const maxOfThree = (bryanne, ofFreaking, tarth) => {
 
 	return Math.max(...hound)
 
-
 }
 
 maxOfThree(5,2,8)
 
+// #7
+
+const printLongestWord = (illinois) => {
+	let  chicago = '';
+
+	for(i = 0; i < illinois.length; i++){
+		if(chicago.length < illinois[i].length){
+			chicago = illinois[i]
+		}
+	}
+	return chicago
+}
+
+printLongestWord(['taco', 'burrito', 'notagainnooooooooooo', 'pho'])
 
 
+//#8
+
+const more = (x, y) =>{
+	return x * y
+}
+
+const raise = (m, n) => {
+	return Math.pow(m, n)
+}
+
+const transmogrify = (plastic, water, bottle) => {
+	let place = more(plastic, water);
+	let holder = raise(place, bottle);
+
+
+	return holder
+}
+
+transmogrify(5, 3, 2)
+
+
+//onjects- Syntax
+
+// {} curly braces define the object.
+// text: before the colon, there is a property which describes the typeOf value
+// value,  after the colon, it describes the object
+// method    is a function inside of an object
+
+
+// Me
+
+let me = {
+
+}
+
+me.name = 'Giovanni'
+
+me.age = '26'
+me.email = 'Giovanni_perez4@yahoo.com'
+
+me.name
+me.age = 1000
+
+
+me['place of residence'] = 'Berwyn'
+me['pleace of residence']
+
+
+//Slimer
+
+const monster = {
+   name: "Slimer",
+   color: "greenish",
+   type: "plasm or ghost or something"
+}
+
+console.log(monster.name)
+monster.type = 'creature'
+monster.age = 6
+
+
+
+
+//ogres NEEDS WORK
+
+let adventurer = {
+	name: 'Gallant Gio',
+	DragonscaleArmor() {
+		return ogre.attack - 3 
+	},
+	sword: 10,
+	hitpoints: 50 
+}
+
+
+let ogre = {
+	hide() {
+		return adventurer.sword - 2
+	},
+	hitpoints: 70,
+	attack: 5,
+	name: 'Blerghenden',
+	passtimes: ['journaling', 'yoga', 'erroniously messing with the wrong adventurer']
+}
+
+const fight = (turn) => {
+
+	if (turn === 'hero'){
+		return ogre.hitpoints = ogre.hitpoints - ogre.hide()
+	} else if (turn === 'monsta'){
+		return adventurer.hitpoints = adventurer.hitpoints - adventurer.DragonscaleArmor()
+	} 
+
+	gameOver = () => {
+	if (adventurer.hitpoints <= 0){
+		alert('Game Over. Keep grinding')
+	} else if(ogre.hitpoints <= 0) {
+		alert('Congratulations! You have saved the princess!')
+	}
+}
+
+}
+
+
+fight('hero')
 
 
 
