@@ -71,7 +71,7 @@ e ='Kevin' (true);
 
 
 // THE FARM 
-?????????????????????????????????????????
+????????????????????????????????????????????????????????
 
 //	if animal = cow print => "mooooo"
 
@@ -182,20 +182,41 @@ for (let i = 0; i < 100; i++) {
 
 
 // SAVINGS ACCOUNT 
-????????????????????????????????????????????????????????
 
 // Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
 // Check your work! Your banck_account should have $55 in it.
 // You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
 // Check your work! Your banck_account should have $10,100 in it.
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const bankAccount = []
 
-for (let i = 0; i < numbers.length; i++) {
-	function sumArray(numbers){
-	console,log('$' + sumArray(numbers))
+//Part 1
+const bankAccount = 0
+
+for (let i = 0; i < 10; i++) {
+	bankAccount = bankAccount + i
+} console.log(bankAccount)
 }
+
+let bankAccount = 0;
+
+for (let i=0; i<=10; i++) {
+	bankAccount = bankAccount + i;
+}
+
+alert(bankAccount);
+
+
+//Part 2
+
+let bankAccount = 0;
+
+for (let i=0; i<=100; i++) {
+	bankAccount = bankAccount + i * 2;
+}
+
+alert(bankAccount);
+
+
 
 
 // MULTIPLES OF 3 AND 5
@@ -206,8 +227,50 @@ for (let i = 0; i < numbers.length; i++) {
 
 // 👏 You just solved Project Euler problem 1! 👏
 
-for (let i = 0; i < 1000; i++) {
-	if (i % 5 === 0){
-		console.log([i]);
+
+Part One
+
+numbers = 0
+
+for (let i = 0; i < 10; i++) {
+	if (i % 3 === 0 || i % 5 === 0){ numbers = numbers + i;
+		console.log(numbers);
 	}
 }
+
+23
+
+
+Part Two
+
+numbers = 0
+
+for (let i = 0; i <= 1000; i++) {
+	if (i % 3 === 0 || i % 5 === 0){ numbers = numbers + i;
+		console.log(numbers);
+	}
+}
+
+233,168
+
+// Easy Does It
+????????????????????????????????????????????????????????
+// Create an array that contains three quotes and store it in a variable called quotes.
+
+const quotes = {}
+
+const arr = {'To be or not to be', 'it aint over til its over', 'I have a dream'};
+console.log([0].concat(arr))
+
+
+// Given the following array const randomThings = [1, 10, "Hello", true]
+// how do you access the 1st element in the array?
+// Change the value of "Hello" to "World".
+// Check the value of the array to make sure it updated the array.
+
+const randomThings = [1, 10, "Hello", true];
+
+for (var i = 0; i >= 0; i++) {
+	Things[i]		
+}
+
