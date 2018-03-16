@@ -14,6 +14,7 @@ favoriteFood = "pad thai";
 let favoriteAnimal = "dog";
 let myPet = favoriteAnimal;
 
+
 //STRINGS
 // 1. Create a variable called firstVariable
 let firstVariable;
@@ -39,11 +40,12 @@ console.log("Hello, my name is " + myName);
 // Using the provided variable definitions, replace the blanks with a mathematical or boolean operator that evaluates the expression to true.
 a < b;
 c > d;
-'Name' ___ 'Name';
+'Name' === 'Name';
 a < b < c;
 a != a < d; //AG comment <-- could also do a != a != d
 e === 'Kevin';
-48  '48';
+48 == '48';
+
 
 // THE FARM
 
