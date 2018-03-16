@@ -240,10 +240,73 @@ myArray.reverse();
 // MONKEY IN THE MIDDLE 
 // var number = prompt("Enter a number")
 
-if (number < 5) {
-	console.log("little number")
-} else if (number > 10) {
-	console.log("big number")
-} else {
-	console.log("monkey")
-}
+// if (number < 5) {
+// 	console.log("little number")
+// } else if (number > 10) {
+// 	console.log("big number")
+// } else {
+// 	console.log("monkey")
+// }
+
+
+// WHAT'S IN YOUR CLOSET 
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// #1
+// console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!")
+
+// #2
+const kristynShoe = kristynsCloset[0];
+kristynsCloset.shift();
+
+// #3
+kristynsCloset.splice(5, 0, 'raybans')
+
+// #4
+kristynsCloset[4] = "stained knit hat"
+
+// #5
+thomsCloset[0][2]; // light blue button-up
+
+// #6
+thomsCloset[1][1]; // jeans
+
+// #7
+thomsCloset[2][1] // wool scarf
+
+// #8
+console.log("Thom is looking fierce in a " + thomsCloset[0][2] + ", " + thomsCloset[1][1] + ", and a " + thomsCloset[2][1] + "!")
+
+// #9
+thomsCloset[1][2] = "Footie Pajamas"
+
