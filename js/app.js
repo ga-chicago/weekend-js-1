@@ -204,3 +204,24 @@ ourClass[2] = "Octocat";
 // #3
 ourClass.push("Cloud City")
 
+
+
+// MIX IT UP 
+
+// #4
+const myArray = [5 ,10 ,500, 20]
+
+// #5
+myArray.push("Egon");
+
+// #6
+myArray.pop();
+
+// #7
+myArray.unshift("Bob Marley");
+
+// #8
+myArray.shift();
+
+// #9
+myArray.reverse();
