@@ -188,10 +188,19 @@ randomThings[0];
 randomThings[2] = "World";
 
 // #3
-console.log(randomThings);
+// console.log(randomThings);
 
 
 // WE'VE GOT CLASS 
 
+const ourClass = ["Gizmo", "Zoom", "Github", "Slack"]
 
+// #1
+ourClass[2];
+
+// #2
+ourClass[2] = "Octocat";
+
+// #3
+ourClass.push("Cloud City")
 
