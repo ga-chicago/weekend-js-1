@@ -30,18 +30,15 @@ if (a === 1) {
   // - change the value of `secondVariable` to a string.  
   // - What is the value of `firstVariable`?
 
-let firstVariable = ("Hello World") => {
-	let secondVariable = firstVariable()
-	
-	}
-	console.log(firstVariable)
-}
+let firstVariable = ("Hello World") //declare the number
+firstVariable = 6//assi =
 
 
-let firtsV = (a, b)
- if (a & b === firstV)
- let secondV = (num)
-secondv === firstV
+
+ let secondVariable = firstVariable
+ secondVariable = ''
+
+
 
 
 ///#5 Create a variable called `yourName` and 
@@ -50,9 +47,10 @@ secondv === firstV
 //"Hello, my name is " and the variable `yourName` 
 //so that it returns a new string with them concatenated. 
 //>ex: `Hello, my name is Jean Valjean`
- let name = "Noemi"
-const yourName = ('') => {
-	console.log(('Hello my name is') + yourName())
+ let yourName = "Noemi"
+ //funt 2 parameter 1 with a string an one name
+
+	return(('Hello my name is') + yourName())
 }
 yourName('')
 
@@ -102,11 +100,118 @@ console.log("Hey you are not a cow"){
 //if the age is 16 years or older.
 //3)Change your code so that if the age is younger than 16, 
 //a message will print "Sorry, you're too young."
-const personAge = 16;
-if(personAge < 16){
+let personAge = 16;
+  if (personAge <= 16) {
   console.log("Here are the keys")
-}esle if(personAge > 16)
-console.log("Sorry, you're too young");
+} esle {
+console.log("Sorry, you're too young")
+} 
+
+
+////#9 ## Just Loop It
+// 1) Write code that will print out 
+// all the numbers in the range 0 - 10.
+
+// 2) Write code that will print out 
+// all the numbers in the range 10 - 4000.
+
+// 3) Write code that will print out 
+// every other number in the range 10 - 4000.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////#10## Let's get even
+// ## Let's get even
+// 1) Print out the even numbers that are within the range of 1 - 100.
+// 2) Adjust your code to add a message next to the even number that says:
+// "is an even number".
+
+// >Example Output:
+// ```
+// 2 is an even number
+// 4 is an even number
+// 6 is an even number
+
+const evenNumb = () => {
+ for (i%2 === 0){
+  console.log(i + "I found a `number`. High five!");
+}  
+
+
+
+
+//#11 ## Give me Five
+// 1) For the numbers 0 - 100, print out "I found a `number`. 
+//High five!" if the number is a multiple of five.
+
+// >Example Output:
+// ```
+// I found a 5. High five!
+// I found a 10. High five!
+// ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 2) Add to the code from above to print out 
+//"I found a `number`. Three is a crowd" if the number is a multiple of three.
+
+// >Example Output:
+// ```
+// I found a 3. Three is a crowd
+// I found a 5. High five!
+// I found a 6. Three is a crowd
+// I found a 9. Three is a crowd
+// I found a 10. High five!
+```
+// ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //#12 ## Savings account
+// 1) Write code that will save the sum of all the numbers 
+//between 1 - 10 to a variable called `bank_account`.
+// >Check your work! Your banck_account should have $55 in it.
+// 2) You got a bonus! Your pay is now doubled each week. 
+//Write code that will save the sum of all the numbers 
+//between 1 - 100 multiplied by 2.
+// >Check your work! Your banck_account should have $10,100 in it.
+
+
+
+
 
 
 
