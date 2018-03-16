@@ -175,3 +175,23 @@ for (let i = 0; i < 1000; i++) {
 // easy does it 
 
 const quotes = ["this is a quote - 'Hannah'", "this is also a quote - 'Hannah'", "yet again, this is also a quote - 'Hannah'"]
+
+
+// random
+
+const randomThings = [1, 10, "Hello", true]
+
+// #1
+randomThings[0];
+
+// #2
+randomThings[2] = "World";
+
+// #3
+console.log(randomThings);
+
+
+// WE'VE GOT CLASS 
+
+
+
