@@ -160,3 +160,55 @@ randomThings[1]
 // Change the value of "Hello" to "World".
 randomThings[2] = "World"
 // Check the value of the array to make sure it updated the array.
+
+// We've Got Class
+// Given the following array
+const ourClass = ["Gizmo", "Zoom", "Github", "Slack"]
+// What would you write to access the 3rd element of the array?
+ourClass[3]
+// Change the value of "Github" to "Octocat"
+ourClass[2] = "Octocat"
+// Add a new element, "Cloud City" to the array.
+ourClass.push("Cloud City")
+
+
+// Given the following array
+const myArray = [5 ,10 ,500, 20]
+// using the push method, add the string "Egon" to the end of the array.
+myArray.push("Egon")
+// using a method, remove the string from the end of the array.
+myArray.pop("")
+// using the unshift method, add the string "Bob Marley" to the beginning of the array
+myArray.unshift("Bob Marley")
+// using a different method, remove the string from the beginning of the array
+myArray.shift("")
+// use the reverse method on this array
+myArray.reverse("")
+
+// Biggie Smalls
+// Write an if..else statement:
+// console.log little number if the number is entered is less than 100
+// If the number entered is 100 or more, alert big number.
+const biggieSmalls = (num) => {
+  if(num < 100) {
+  console.log("little number");
+    } else {
+  console.log("big number");
+  }
+}
+
+// Monkey in the Middle
+// Write an if...else if...else statement:
+// console.log little number if the number entered is less than 5.
+// If the number entered is more than 10, log big number.
+// Otherwise, console.log "monkey".
+
+const monkeyInMiddle = (num) => {
+  if(num < 5) {
+    console.log("little number");
+  } else if(num > 10) {
+    console.log("big number");
+  } else {
+    console.log("monkey");
+  }
+}
