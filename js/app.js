@@ -273,3 +273,63 @@ console.log("Thom is looking fierce in a " + shirts + ", "  + pants + ", " + ext
 // Get more specific about what kind of PJs Thom's wearing this winter.
 //Modify the name of his PJ pants to Footie Pajamas.
 thomsCloset[1][2] = "footie pajamas"
+
+
+//~*~*~*~*~FUNCTIONS*~*~*~*~
+//Print greeting
+//Write a function called printGreeting with a parameter name that returns
+//a greeting with the argument interpolated into the greeting.
+const printGreeting = (name) => {
+  return "Hello there, " + name + "!";
+}
+console.log(printGreeting("Slimer"));
+
+
+//reverseWordOrder
+//Write a function reverseWordOrder that accepts a single argument, a string.
+//The function should return a string with the order of the words reversed.
+//Don't worry about punctuation.
+const reverseWordOrder = (str) => {
+  const splitString = str.split(" ");
+  const reverseArray = splitString.reverse();
+  return joinedArray = reverseArray.join(" ");
+}
+console.log(reverseWordOrder("Ishmael me Call"));
+console.log(reverseWordOrder("I use Lâncome on my comb"));
+
+// calculate
+// Write a function called calculate.
+// This function should take three arguments, two numbers and a string.
+
+// Name the parameters num1, num2, and operation.
+const calculate = (num1, num2, "operation") => {
+// If the function receives the string "add" for the operation parameter, it will return the sum of num1 and num2.
+if(operation === "add") {
+  return num1 + num2
+// If the function receives the string "sub" for the operation parameter, it will return num1 minus num2.
+} else if(operation === "sub") {
+  return num1 - num2
+// Do the same thing for multiplication "mult", division "div", and exponent "exp" (where num2 is the exponent of num1).
+} else if(operation === "mult") {
+  return num1 * num2
+} else if(operation === "div") {
+  return num1 / num2
+} else if(operation === "exp") {
+  return num1**num2
+} else  {
+  }
+}
+
+console.log(calculate(4, 3, "sub"));
+console.log(calculate(4, 3, "exp"));
+
+
+//Write a function printCool that accepts one parameter, name as an argument.
+//The function should print the name and a message saying that that person is cool.
+const printCool = (name) => {
+  return name + " is cool."
+console.log(printCool("pizza"));
+
+
+//Write a function calculateCube that takes a single number
+//and prints the volume of a cube made from that number.
