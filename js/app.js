@@ -348,3 +348,92 @@ const calculate = (num1, num2, operation) => {
 // console.log(calculate(4,3,"sub"))
 // console.log(calculate(4,3,"exp"))
 
+//  # 1
+
+const printCool = (name) => {
+	return(name + " is cool")
+}
+
+// console.log(printCool("Hannah")) // "Hannah is cool"
+ 
+// #2
+
+const calculateCube = (num) => {
+	return (num ** 3); 
+}
+
+// console.log(calculateCube(5)) // 125
+
+// #3
+
+const isAVowel = (char) => {
+	if (char.length > 1) {
+		console.log("Invalid input.")
+	} else if (char.toLowerCase() === 'a' || char.toLowerCase() === 'e' || char.toLowerCase() === 'i' || char.toLowerCase() === 'o' || char.toLowerCase() === 'u') {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// #4 GET TWO LENGTHS 
+
+let lengths = [];
+
+const getTwoLengths = (str1, str2) => {
+	lengths[0] = str1.length;
+	lengths[1] = str2.length;
+
+	return lengths;
+}
+
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
+
+// #5 GET MULTIPLE LENGTHS
+
+const getMultipleLengths = (arrOfStrings) => {
+	lengths = [];
+	for (let i = 0; i < arrOfStrings.length; i++) {
+		lengths.push(arrOfStrings[i].length)
+	}
+
+	return lengths;
+	// loop through this array
+	// for each string, find the length, push it to lengths
+}
+
+arrOfStrings = ["here", "are", "some", "supercalifragelisticexpialedocious", "newer", "strings", "supercalifragelisticexpialedocious"]
+
+// console.log(getMultipleLengths(arrOfStrings));
+
+// #6 MAX OF THREE 
+
+const maxOfThree = (num1, num2, num3) => {
+	const numArray = [num1, num2, num3]
+	return Math.max(...numArray);
+}
+
+// #7 printLongestWord
+
+const printLongestWord = (arrOfStrings) => {
+	const lengthsOfStrings = [];
+
+	for (let i = 0; i < arrOfStrings.length; i++) {
+		lengthsOfStrings.push(arrOfStrings[i].length)
+	}
+
+	const max = Math.max(...lengthsOfStrings);
+
+	for (let j = 0; j < arrOfStrings.length; j++) {
+		if (lengthsOfStrings[j] === max) {
+			return arrOfStrings[j]
+		}
+	}
+}
+
+
+// #8 transmorgrify
+
+const transmorgrify = (num1, num2, num3) => {
+	return (num1 * num2) ** num3;
+}
