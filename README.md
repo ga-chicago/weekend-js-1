@@ -449,7 +449,7 @@ Using **objects**, create **models** and have them interact.
 * how would you model your `adventurer`? Your adventurer will want a **name** and **hitpoints**. What else would your adventurer need?
 * how would you model an `ogre`? Your ogre will want **hitpoints**.
 
-* Write a very small program that will simulate a battle between your adventurer and an ogre. You can use the same techniques you used in your **landscaping** game from the weekend.
+* Write a very small program that will simulate a battle between your adventurer and an ogre. 
 	* When your adventurer's hitpoints reach 0 the game is over.
 	* When your ogre's hitpoints reach 0 the game is over.
 
