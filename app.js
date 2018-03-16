@@ -233,3 +233,49 @@ myArray.splice(0,1);
 
 //9. use the reverse method on this array
 myArray.reverse();
+
+
+// BIGGIE SMALLS - write an if..else statement:
+//1. console.log little number if the number is entered is less than 100
+//2. If the number entered is 100 or more, alert big number.
+num = 5;
+
+if(num < 100) {
+	console.log("little number")
+} else {
+	console.log("big number")
+}
+
+
+// MONKEY IN THE MIDDLE - write an if...else if...else statement:
+// 1. console.log little number if the number entered is less than 5.
+// 2. If the number entered is more than 10, log big number.
+// 3. Otherwise, console.log "monkey". 
+num = 8;
+
+if(num < 5) {
+	console.log("little number")
+} else if(num > 10) {
+	console.log("big number")
+} else {
+	console.log("monkey")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
