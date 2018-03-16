@@ -135,8 +135,27 @@ for (let i = 0; i <= 100; i++) {
 // #2
 for (let i = 0; i <= 100; i++) {
 	if (i % 5 === 0) {
-		console.log("I found a " + i + ". High five!")
+		// console.log("I found a " + i + ". High five!")
 	} else if (i % 3 === 0) {
-		console.log("I found a " + i + ". Three is a crowd")
+		// console.log("I found a " + i + ". Three is a crowd")
 	}
 }
+
+
+// SAVINGS ACCOUNT
+
+// #1 
+let bank_account = 0;
+
+for (let i = 1; i <=10; i++) {
+	bank_account += i;
+}
+
+// #2
+bank_account = 0;
+
+for (let i = 1; i <= 100; i ++) {
+	bank_account += 2*i
+}
+
+
