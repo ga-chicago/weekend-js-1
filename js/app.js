@@ -305,8 +305,46 @@ thomsCloset[1][1]; // jeans
 thomsCloset[2][1] // wool scarf
 
 // #8
-console.log("Thom is looking fierce in a " + thomsCloset[0][2] + ", " + thomsCloset[1][1] + ", and a " + thomsCloset[2][1] + "!")
+// console.log("Thom is looking fierce in a " + thomsCloset[0][2] + ", " + thomsCloset[1][1] + ", and a " + thomsCloset[2][1] + "!")
 
 // #9
 thomsCloset[1][2] = "Footie Pajamas"
+
+
+// FUNCTIONS 
+
+// printGreeting
+
+const printGreeting = (name) => {
+	console.log("Hello there, " + name + "!")
+} 
+
+// reverseWordOrder
+
+const reverseWordOrder = (str) => {
+	let splitStr = str.split(' ');
+	let reverseString = splitStr.reverse();
+	return reverseString.join(' ')
+}
+
+str = "Call me Ishmael"
+
+// calculate 
+
+const calculate = (num1, num2, operation) => {
+	if (operation === 'add') {
+		return num1 + num2;
+	} else if (operation === 'sub') {
+		return num1 - num2;
+	} else if (operation === 'mult') {
+		return num1 * num2;
+	} else if (operation === 'div') {
+		return num1 / num2;
+	} else if (operation === 'exp') {
+		return num1 ** num2;
+	}
+}
+
+// console.log(calculate(4,3,"sub"))
+// console.log(calculate(4,3,"exp"))
 
