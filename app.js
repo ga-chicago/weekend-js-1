@@ -48,9 +48,38 @@ e === 'Kevin';
 
 
 // THE FARM
+//1. Write code that will print out "mooooo" if the variable animal is equal to cow.
+let animal = "cow";
+
+if(animal === "cow") {
+	console.log("mooooo")
+};
+
+//2. Change your code so that if the variable animal is anything other than a cow, your should print out "Hey! You're not a cow."
+let animal = "cow";
+
+if(animal === "cow") {
+	console.log("mooooo")
+}; else {
+	"Hey! You're not a cow."
+}
 
 
+//DRIVER'S ED
+// 1. Write a variable that will hold a person's age.
+let age;
 
+// 2. Write code that will print out "Here are the keys", if the age is 16 years or older.
+if(age <= 16) {
+	console.log("Here are the keys.")
+}
+
+// 3. Change your code so that if the age is younger than 16, a message will print "Sorry, you're too young."
+if(age >= 16) {
+	console.log("Here are the keys.")
+} else if (age < 16) {
+	console.log("Sorry, you're too young.")
+}
 
 
 
