@@ -37,7 +37,7 @@ console.log("Hello, my name is " + myName);
 
 
 // BOOLEANS
-// Using the provided variable definitions, replace the blanks with a mathematical or boolean operator that evaluates the expression to true.
+//1. Using the provided variable definitions, replace the blanks with a mathematical or boolean operator that evaluates the expression to true.
 a < b;
 c > d;
 'Name' === 'Name';
@@ -74,7 +74,7 @@ if(age <= 16) {
 	console.log("Here are the keys.")
 }
 
-// 3. Change your code so that if the age is younger than 16, a message will print "Sorry, you're too young."
+//3. Change your code so that if the age is younger than 16, a message will print "Sorry, you're too young."
 if(age >= 16) {
 	console.log("Here are the keys.");
 } else if (age < 16) {
@@ -117,6 +117,55 @@ for(i = 1; i <= 100; i++) {
 }
 
 
+// GIVE ME FIVE
+//1. For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five.
+for(i = 0; i <= 100; i++) {
+	if((i % 5) == 0) {
+		console.log("I found a " + i + ". High five!")
+	}
+}
+
+//2. Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three.
+for(i = 0; i <= 100; i++) {
+	if((i % 5) == 0) {
+		console.log("I found a " + i + ". High five!");
+	} else if((i % 3) == 0) {
+		console.log("I found a " + i + ". Three is a crowd.")
+	}
+}
+
+
+// SAVINGS ACCOUNT
+//1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+// let bank_account = 0;
+
+// for(bank_account = 0; bank_account <= 55; bank_account++) {
+// 	console.log(bank_account += 1)
+// }
+
+// //2. You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers 
+// //between 1 - 100 multiplied by 2.
+// let bank_account = 0;
+
+// for(bank_account = 0; bank_account <= 10100; bank_account++) {
+// 	console.log(bank_account += 1)
+// }
+
+
+// MULTIPLES OF 3 AND 5
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+// find all the multiples of 3 and 5
+for(i = 0; i <= 1000; i++) {
+	if((i % 5) == 0) {
+		console.log("multiple of five");
+	} else if((i % 3) == 0) {
+		console.log("multiple of three")
+	}
+}
+
+
+// add all the multiple together
 
 
 
