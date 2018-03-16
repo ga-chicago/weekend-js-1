@@ -16,7 +16,7 @@ let myPet = favoriteAnimal;
 
 
 //STRINGS
-// 1. Create a variable called firstVariable
+//1. Create a variable called firstVariable
 let firstVariable;
 // 		assign it the value of a string => "Hello World"
 firstVariable = "Hello World";
@@ -29,7 +29,7 @@ secondVariable = "This is my new string";
 // 		What is the value of firstVariable?
 firstVariable = 69;
 
-// 2. Create a variable called yourName and set it equal to your name as a string
+//2. Create a variable called yourName and set it equal to your name as a string
 let myName = "Alyssa Graham";
 // 		Write an expression that takes the string "Hello, my name is " and the variable yourName so that it 
 // 		returns a new string with them concatenated.
@@ -59,29 +59,62 @@ if(animal === "cow") {
 let animal = "cow";
 
 if(animal === "cow") {
-	console.log("mooooo")
+	console.log("mooooo");
 }; else {
 	"Hey! You're not a cow."
 }
 
 
 //DRIVER'S ED
-// 1. Write a variable that will hold a person's age.
+//1. Write a variable that will hold a person's age.
 let age;
 
-// 2. Write code that will print out "Here are the keys", if the age is 16 years or older.
+//2. Write code that will print out "Here are the keys", if the age is 16 years or older.
 if(age <= 16) {
 	console.log("Here are the keys.")
 }
 
 // 3. Change your code so that if the age is younger than 16, a message will print "Sorry, you're too young."
 if(age >= 16) {
-	console.log("Here are the keys.")
+	console.log("Here are the keys.");
 } else if (age < 16) {
 	console.log("Sorry, you're too young.")
 }
 
 
+// JUST LOOP IT
+//1. Write code that will print out all the numbers in the range 0 - 10.
+for(i = 0; i <= 10; i++) {
+	console.log(i)
+}
+
+//2. Write code that will print out all the numbers in the range 10 - 4000.
+for(i = 10; i <= 4000; i++) {
+	console.log(i)
+}
+
+//3. Write code that will print out every other number in the range 10 - 4000.
+for(i = 10; i <= 4000; i++) {
+	if((i % 2) == 0) {
+		console.log(i)
+	}
+}
+
+
+// LET'S GET EVEN
+//1. Print out the even numbers that are within the range of 1 - 100.
+for(i = 1; i <= 100; i++) {
+	if((i % 2) == 0) {
+		console.log(i)
+	}
+}
+
+//2. Adjust your code to add a message next to the even number that says: "is an even number".
+for(i = 1; i <= 100; i++) {
+	if((i % 2) == 0) {
+		console.log(i + " is an even number")
+	}
+}
 
 
 
