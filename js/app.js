@@ -235,3 +235,15 @@ myArray.reverse();
 // } else {
 // 	console.log("big number")
 // }
+
+
+// MONKEY IN THE MIDDLE 
+// var number = prompt("Enter a number")
+
+if (number < 5) {
+	console.log("little number")
+} else if (number > 10) {
+	console.log("big number")
+} else {
+	console.log("monkey")
+}
