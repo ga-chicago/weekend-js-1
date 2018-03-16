@@ -81,6 +81,32 @@ console.log(e === 'Kevin'); //console.log(e === 'Kevin');  true
 console.log(48 == '48'); ///console.log(48 == '48'); true
 // 48 ___ '48';
 
+///#7 The Farm
+//1) Write code that will print out "mooooo" 
+//if the variable `animal` is equal to `cow`.
+//2) Change your code so that if the variable `animal` 
+//is anything other than a cow, 
+//your should print out "Hey! You're not a cow."
+const animal = ("mooooo");
+if(animal = cow){
+console.log("mooooo")
+}else if(animal != cow)
+console.log("Hey you are not a cow"){
+  else{} 
+};
+
+
+///#8## Driver's Ed
+//1) Write a variable that will hold a person's age.
+//2) Write code that will print out "Here are the keys", 
+//if the age is 16 years or older.
+//3)Change your code so that if the age is younger than 16, 
+//a message will print "Sorry, you're too young."
+const personAge = 16;
+if(personAge < 16){
+  console.log("Here are the keys")
+}esle if(personAge > 16)
+console.log("Sorry, you're too young");
 
 
 
