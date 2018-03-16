@@ -34,3 +34,19 @@ const yourName = "Hannah";
 console.log("Hello, my name is " + yourName);
 
 
+
+
+// Booleans
+const a = 4;
+const b = 53;
+const c = 57;
+const d = 16;
+const e = 'Kevin';
+
+a < b
+c > d
+'Name' = 'Name';
+a + b === c;
+a * a === d;
+e === 'Kevin';
+48 == '48'
