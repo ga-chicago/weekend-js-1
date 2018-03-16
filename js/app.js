@@ -18,3 +18,19 @@ c = ["this", "is", "a", "different", "thing"];
 const d = a;
 let e = c;
 
+
+
+// Strings
+// #1
+let firstVariable = "Hello World";
+firstVariable = 42;
+let secondVariable = firstVariable;
+secondVariable = "This is a string";
+
+// the value of firstVariable is 42. 
+
+// #2
+const yourName = "Hannah";
+console.log("Hello, my name is " + yourName);
+
+
