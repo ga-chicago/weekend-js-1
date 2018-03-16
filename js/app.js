@@ -170,3 +170,8 @@ for (let i = 0; i < 1000; i++) {
 		sum += i;
 	}
 }
+
+
+// easy does it 
+
+const quotes = ["this is a quote - 'Hannah'", "this is also a quote - 'Hannah'", "yet again, this is also a quote - 'Hannah'"]
