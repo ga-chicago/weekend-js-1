@@ -156,17 +156,49 @@ for(i = 0; i <= 100; i++) {
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
 // find all the multiples of 3 and 5
-for(i = 0; i <= 1000; i++) {
-	if((i % 5) == 0) {
-		console.log("multiple of five");
-	} else if((i % 3) == 0) {
-		console.log("multiple of three")
-	}
-}
+// let multipleOfThree = [].reduce(add, 0);
+// let multipleOfFive = []. reduce(add, 0);
+
+// for(i = 0; i <= 1000; i++) {
+// 	if((i % 5) == 0) {
+// 		multipleOfFive.push(i++);
+// 	} else if((i % 3) == 0) {
+// 		multipleOfThree.push(i++)
+// 	}
+
+// 	const sum = (a, b) => {
+// 		a + b
+// 	}
+// 	const sum = multipleOfThree.reduce(add)
+
+// }
+
+//create a variable to store multiples of 3
+
+//create a variable to store multiples of 5
+
+// add the two variables together
+
+// Possible solution? // let sum = 0;
+// for (i = 1; i < 1000; i++){
+// 	if(i % 3 === 0 || i % 5 === 0){
+// 		console.log(sum += i)
+// 	}
+// }
 
 
-// add all the multiple together
+// EASY DOES IT
+//.1 Create an array that contains three quotes and store it in a variable called quotes.
+let quotes = ["Use the Force"], ["I've got a bad feeling about this"], ["Do or do not. There is not try"]
 
 
+// RANDOM
+const randomThings = [1, 10, "Hello", true]
+//1. How do you access the 1st element in the array?
+randomThings[0];
 
+//2. Change the value of "Hello" to "World".
+randomThings[2] = "World";
 
+//3. Check the value of the array to make sure it updated the array.
+console.log(randomThings) //<-- result: [1, 10, "World", true]
