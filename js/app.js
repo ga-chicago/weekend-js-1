@@ -437,3 +437,88 @@ const printLongestWord = (arrOfStrings) => {
 const transmorgrify = (num1, num2, num3) => {
 	return (num1 * num2) ** num3;
 }
+
+
+// objects
+
+// SYNTAX
+
+let myObject = {
+	thing: "this thing",
+	otherThing: false
+}
+
+// use let or const to create a variable. use curly braces to define that the variable is an object. Inside the curly braces, write the key-value pairs. In this object, 'thing' and 'otherThing' are keys, and '"this thing"' and 'false' are values. There is a comma after every key-value pair except the last one. 
+
+// ME 
+
+// #1
+let me = {};
+
+// #2
+me.name = "Hannah"
+me.age = 22;
+me.email = "hanna.w28@gmail.com"
+
+// #3
+me.name; // returns "Hannah"
+
+// #4
+me.age = 1000;
+
+// #5
+me["place of residence"] = "Chicago";
+
+// #6
+me["place of residence"]
+
+
+// slimer
+
+const monster = {
+   name: "Slimer",
+   color: "greenish",
+   type: "plasm or ghost or something"
+}
+
+// console.log(monster.name) // "Slimer"
+monster.type = "creature"; // changes type to creature
+monster.age = 6;
+// console.log(monster.type, monster.age)
+
+
+// OGRES 
+
+const adventurer = {
+	name: "Harry Potter",
+	hitpoints: 9,
+	belongings: ["wand", "glasses", "broomstick"]
+}
+
+const ogre = {
+	name: "Gross Ogre",
+	hitpoints: 6
+}
+
+const ogreAttacksHarry = (strengthOfAttack, defense) => {
+	// ogre attacks harry with attackstrength, harry defends with defense
+	if (strengthOfAttack > defense) {
+		adventurer.hitpoints -= 5;
+		if (adventurer.hitpoints > 0) {
+			return ("Your defense was unsuccessful. You lost 5hp. You now have " + adventurer.hitpoints + " hitpoints remaining. Beware of the ogre.")
+		} else if (adventurer.hitpoints <= 0) {
+			return ("Your defense was unsuccessful. You are dead.")
+		} 
+		
+	} else if (strengthOfAttack < defense) {
+		ogre.hitpoints -= 5;
+		if (ogre.hitpoints > 0) {
+			return ("Your attack was successful and caused 5hp of damage. Your enemy has " + ogre.hitpoints + " hitpoints remaining. Please attack again.")
+		} else if (ogre.hitpoints <=0) {
+			return "Congratulations, you defeated the ogre. Continue to the next challenge."
+		}	
+	}
+}
+
+
+// EXTRA STUFF 
