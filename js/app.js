@@ -522,3 +522,34 @@ const ogreAttacksHarry = (strengthOfAttack, defense) => {
 
 
 // EXTRA STUFF 
+
+// #1 MAMA CAT
+
+const cat1 = {
+	name: "Fluffy",
+	breed: "extra fluffy cat",
+	age: 4
+}
+
+// console.log(cat1.age)
+// console.log(cat1.breed)
+
+// #2 papa cat
+
+const cat2 = {
+	name: "Socks",
+	breed: "black cat",
+	age: 5
+}
+
+// #3 combine cats
+
+const combineCats = (mama, papa) => {
+	const newCat = {};
+	newCat.name = mama.name + papa.name;
+	newCat.age = 1;
+	newCat.breed = mama.breed + "-" + papa.breed;
+	return newCat;
+}
+
+combineCats(cat1, cat2)
