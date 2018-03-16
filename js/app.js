@@ -225,3 +225,13 @@ myArray.shift();
 
 // #9
 myArray.reverse();
+
+
+/// BIGGIE SMALLS 
+
+// #1
+// if (prompt('Enter a number') < 100) {
+// 	console.log("little number")
+// } else {
+// 	console.log("big number")
+// }
