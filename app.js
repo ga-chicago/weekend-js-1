@@ -202,3 +202,34 @@ randomThings[2] = "World";
 
 //3. Check the value of the array to make sure it updated the array.
 console.log(randomThings) //<-- result: [1, 10, "World", true]
+
+
+//WE'VE GOT CLASS
+const ourClass = ["Gizmo", "Zoom", "Github", "Slack"]
+//1. What would you write to access the 3rd element of the array?
+ourClass[2]
+
+//2. Change the value of "Github" to "Octocat"
+ourClass[2] = "Octocat";
+
+//3. Add a new element, "Cloud City" to the array.
+ourClass.push("Cloud City");
+
+
+// MIX IT UP
+const myArray = [5 ,10 ,500, 20]
+
+//5. using the push method, add the string "Egon" to the end of the array.
+myArray.push("Egon");
+
+//6. using a method, remove the string from the end of the array
+myArray.pop();
+
+//7. using the unshift method, add the string "Bob Marley" to the beginning of the array
+myArray.unshift("Bob Marley");
+
+//8. using a different method, remove the string from the beginning of the array
+myArray.splice(0,1);
+
+//9. use the reverse method on this array
+myArray.reverse();
