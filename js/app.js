@@ -462,8 +462,14 @@ const ogre = {
 
 // small program simulating a battle between adventurer and ogre
 
-// not sure what to do, but I'll give this a shot.
+// random integer generating function 
+// parameter = maximum number that can be generated
 
+const getRandomInt = (max) => {
+	return Math.floor(Math.random() * Math.floor(max));
+};
+
+console.log(getRandomInt(10));
 
 const battle = (fighter1, fighter2) => {
 	// set conditions for the hitpoints to decrease
@@ -471,12 +477,39 @@ const battle = (fighter1, fighter2) => {
 	// random number + power - vitality = damage done per turn
 
 	// set conditions for if they die and battle has ended
-	if (fighter1.hitpoints === 0) {
-		return (fighter1.name + " has died.", fighter2.name + " is victorious!");
-	} else if (fighter2.hitpoints === 0) {
-		return (fighter2.name + " has died.", fighter1.name + " is victorious!");
+	// hitpoints must be less than or equal to zero in case
+	// the attack power decreases hitpoints by more than what's left
+	// run function again until hit points of one fighter are zero
+	// set variables for each fighters attack power
+	let fighter1Power = getRandomInt(10) * fighter1.power;
+	let fighter2Power = getRandomInt(10) * fighter2.power;
+	// set variables for damage taken each time function runs (each "turn")
+	// not necessary but makes it cleaner
+	let fighter1DamageTaken = (fighter2Power - fighter1.vitality);
+	let fighter2DamageTaken = (fighter1Power - fighter2.vitality);
+	// console.log(fighter1Power); // working
+	// console.log(fighter2Power); // working
+	// set conditions for each fighter getting damaged, update hitpoints to be decreased
+	if (fighter1Power > fighter2.vitality) {
+		fighter2.hitpoints = fighter2.hitpoints - fighter2DamageTaken;
+		console.log(fighter2.name + " has taken " + fighter2DamageTaken + " damage!");
+		console.log(fighter2.name + " has " + fighter2.hitpoints + " hitpoints remaining.");
+	} 
+	if (fighter2Power > fighter1.vitality) {
+		fighter1.hitpoints = fighter1.hitpoints - fighter1DamageTaken;
+		console.log(fighter1.name + " has taken " + fighter1DamageTaken + " damage!");
+		console.log(fighter1.name + " has " + fighter1.hitpoints + " hitpoints remaining.");
+	}
+	// end condition if one of the fighters dies
+	if (fighter2.hitpoints <= 0) {
+		console.log(fighter2.name + " has died.", fighter1.name + " is victorious!");
+		return (fighter2.name + " has died." + fighter1.name + " is victorious!");
+	} else if (fighter1.hitpoints <= 0) {
+		console.log(fighter1.name + " has died.", fighter2.name + " is victorious!");
+		return (fighter1.name + " has died." + fighter2.name + " is victorious!");
 	} else {
-		// run function again until hit points of one fighter are zero
+		// run function again until end condition is met
+		battle(fighter1, fighter2);
 	}
 };
 
