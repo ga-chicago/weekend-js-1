@@ -441,7 +441,9 @@ const adventurer = {
 	hitpoints: 100,
 	species: "dwarf",
 	weapon: "war hammer",
-	shield: "wooden"
+	shield: "wooden",
+	power: 4,
+	vitality: 6 
 };
 
 const ogre = {
@@ -450,12 +452,36 @@ const ogre = {
 	species: "ogre",
 	color: "green",
 	weapon: "club",
-	shield: "wooden"
+	shield: "wooden",
+	power: 5,
+	vitality: 7
 };
+
+// weapon/shield are descriptions
+// power/vitality are the values of their attack/defense
 
 // small program simulating a battle between adventurer and ogre
 
 // not sure what to do, but I'll give this a shot.
+
+
+const battle = (fighter1, fighter2) => {
+	// set conditions for the hitpoints to decrease
+	// should be random so the result isn't always the same
+	// random number + power - vitality = damage done per turn
+
+	// set conditions for if they die and battle has ended
+	if (fighter1.hitpoints === 0) {
+		return (fighter1.name + " has died.", fighter2.name + " is victorious!");
+	} else if (fighter2.hitpoints === 0) {
+		return (fighter2.name + " has died.", fighter1.name + " is victorious!");
+	} else {
+		// run function again until hit points of one fighter are zero
+	}
+};
+
+console.log(battle(adventurer, ogre)); //undefined until I determine a way to make the function loop again until hitpoints of a fighter reach zero
+
 
 // EXTRA STUFF
 
@@ -469,11 +495,15 @@ const cat1 = {
 	age: 4
 };
 
+// PAPA CAT
+
 const cat2 = {
 	name: "Craig",
 	breed: "Persian",
 	age: 3
 };
+
+console.log(cat1.name);
 
 const combineCats = (mama, papa) => {
 	return {
@@ -487,4 +517,9 @@ console.log(combineCats(cat1, cat2));
 
 console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
 
-console.log(combineCats(combineCats(combineCats(cat1, cat2)), combineCats(cat1, cat2)), (combineCats(combineCats(cat1, cat2)), combineCats(cat1, cat2)));
+// for the last one, the easiest way to get it right
+// is to copy/paste the function in the previous console.log
+// as the two arguments in a new combineCats function
+
+console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
+
