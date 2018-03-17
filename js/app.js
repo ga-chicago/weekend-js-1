@@ -553,3 +553,8 @@ const combineCats = (mama, papa) => {
 }
 
 combineCats(cat1, cat2)
+
+// #4 cat brain bender (this catception makes my brain hurt)
+
+const doubleCat = combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))
+console.log(combineCats(doubleCat, doubleCat))
