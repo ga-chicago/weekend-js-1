@@ -342,6 +342,91 @@ console.log(calculate(7,2,'exp'));
 
 
 
+//1
+const printCool = (name) =>{
+	console.log(name + ' is cool.');
+}
+
+printCool('MJ');
+
+//2
+const calculateCube = (num)=>{
+	console.log(Math.pow(num,3));
+}
+
+
+calculateCube(5);
+
+// 3
+
+const isAVowel = (letter)=>{
+	if(letter === "a"|| letter==="e"|| letter==="i"||letter==="o"||letter==="u"||letter === "A"|| letter==="E"|| letter==="I"||letter==="O"||letter==="U"){
+		return true;
+	}
+	else{return false;}
+}
+
+console.log(isAVowel('E'));
+
+// 4
+
+const getTwoLengths=(str1,str2)=>{
+	let numArray = [str1.length,str2.length];
+	return numArray;
+}
+
+console.log(getTwoLengths('Hello','Universe'));
+
+
+// 5
+
+const getMultipleLengths = (array)=>{
+	let numArray = [];
+	
+	for (let i = 0; i < array.length; i ++){
+		numArray.push(array[i].length);
+	}
+
+	return numArray;
+}
+console.log(getMultipleLengths(['Hi','charlie','how','are','you']));
+
+// 6
+
+const maxOfThree = (num1,num2,num3)=>{
+	let numArray =[];
+	numArray[num1]=num1;
+	numArray[num2]=num2;
+	numArray[num3]=num3;
+	return numArray[numArray.length - 1];
+}
+
+
+console.log(maxOfThree(444,98,72));
+
+
+// 7
+
+const printLongestWord = (array)=>{
+	newWordArray = [];
+	for(let i = 0; i < array.length; i ++){
+		//to place in list before tie breaker
+		if(newWordArray[array[i].length] !== undefined){
+			newWordArray.splice(newWordArray[array[i].length],0,array[i]);
+		}
+		else{
+			newWordArray[array[i].length]=array[i];
+		}	
+	}
+	return newWordArray[newWordArray.length-1];
+}
+
+console.log(printLongestWord(['Onomatopoeia','formation','of','embezzlement','sound']));
+
+// 8
+const transmogrify = (num1,num2,num3)=>{
+	
+}
 
 
 
