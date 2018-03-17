@@ -512,18 +512,22 @@ const battle = (fighter1, fighter2) => {
 	}
 	// end condition if one of the fighters dies
 	if (fighter2.hitpoints <= 0) {
-		console.log(fighter2.name + " has died.", fighter1.name + " is victorious!");
-		return ([fighter2.name, " has died.", fighter1.name, " is victorious!"]);
+		// console.log(fighter2.name + " has died.", fighter1.name + " is victorious!");
+		return (fighter2.name + " has died. " + fighter1.name + " is victorious!");
 	} else if (fighter1.hitpoints <= 0) {
-		console.log(fighter1.name + " has died.", fighter2.name + " is victorious!");
-		return ([fighter1.name, " has died.", fighter2.name, " is victorious!"]);
-	} else {
-		// run function again until end condition is met
-		battle(fighter1, fighter2);
-	}
+		// console.log(fighter1.name + " has died.", fighter2.name + " is victorious!");
+		return (fighter1.name + " has died. " + fighter2.name + " is victorious!")
+	} 
+	// function must run necessary amount of times for return value to be defined
+
+	// cannot call function within itself until function ends and have final return value
+	// else {
+	// 	// run function again until end condition is met
+	// 	battle(fighter1, fighter2);
+	// }
 };
 
-console.log(battle(adventurer, ogre)); // undefined until I determine a way to make the return work
+console.log(battle(adventurer, ogre));
 
 
 // EXTRA STUFF
