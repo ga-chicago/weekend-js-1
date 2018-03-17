@@ -438,6 +438,7 @@ console.log(monster);
 
 const adventurer = {
 	name: "Randolph the Third",
+	max_health: 100,
 	hitpoints: 100,
 	species: "dwarf",
 	weapon: "war hammer",
@@ -448,6 +449,7 @@ const adventurer = {
 
 const ogre = {
 	name: "Stalin",
+	max_health: 120,
 	hitpoints: 120,
 	species: "ogre",
 	color: "green",
@@ -471,6 +473,8 @@ const getRandomInt = (max) => {
 
 console.log(getRandomInt(10));
 
+// the order of my if statements gives fighter1 the advantage
+// would be a better program if I could fix that
 const battle = (fighter1, fighter2) => {
 	// set conditions for the hitpoints to decrease
 	// should be random so the result isn't always the same
@@ -493,27 +497,33 @@ const battle = (fighter1, fighter2) => {
 	if (fighter1Power > fighter2.vitality) {
 		fighter2.hitpoints = fighter2.hitpoints - fighter2DamageTaken;
 		console.log(fighter2.name + " has taken " + fighter2DamageTaken + " damage!");
-		console.log(fighter2.name + " has " + fighter2.hitpoints + " hitpoints remaining.");
+		console.log(fighter2.name + " has " + fighter2.hitpoints + " hitpoints remaining out of " + fighter2.max_health + ".");
+		// if (fighter2.hitpoints <= 0) {
+		// 	return fighter1.name;
+		// }
 	} 
 	if (fighter2Power > fighter1.vitality) {
 		fighter1.hitpoints = fighter1.hitpoints - fighter1DamageTaken;
 		console.log(fighter1.name + " has taken " + fighter1DamageTaken + " damage!");
-		console.log(fighter1.name + " has " + fighter1.hitpoints + " hitpoints remaining.");
+		console.log(fighter1.name + " has " + fighter1.hitpoints + " hitpoints remaining out of " + fighter1.max_health + ".");
+		// if (fighter1.hitpoints <= 0) {
+		// 	return fighter2.name;
+		// }
 	}
 	// end condition if one of the fighters dies
 	if (fighter2.hitpoints <= 0) {
 		console.log(fighter2.name + " has died.", fighter1.name + " is victorious!");
-		return (fighter2.name + " has died." + fighter1.name + " is victorious!");
+		return ([fighter2.name, " has died.", fighter1.name, " is victorious!"]);
 	} else if (fighter1.hitpoints <= 0) {
 		console.log(fighter1.name + " has died.", fighter2.name + " is victorious!");
-		return (fighter1.name + " has died." + fighter2.name + " is victorious!");
+		return ([fighter1.name, " has died.", fighter2.name, " is victorious!"]);
 	} else {
 		// run function again until end condition is met
 		battle(fighter1, fighter2);
 	}
 };
 
-console.log(battle(adventurer, ogre)); //undefined until I determine a way to make the function loop again until hitpoints of a fighter reach zero
+console.log(battle(adventurer, ogre)); // undefined until I determine a way to make the return work
 
 
 // EXTRA STUFF
