@@ -473,6 +473,8 @@ const getRandomInt = (max) => {
 
 console.log(getRandomInt(10));
 
+
+
 // the order of my if statements gives fighter1 the advantage
 // would be a better program if I could fix that
 const battle = (fighter1, fighter2) => {
@@ -510,25 +512,37 @@ const battle = (fighter1, fighter2) => {
 		// 	return fighter2.name;
 		// }
 	}
-	// end condition if one of the fighters dies
+	// setTimeout(battle, 10)
 	if (fighter2.hitpoints <= 0) {
 		// console.log(fighter2.name + " has died.", fighter1.name + " is victorious!");
-		return (fighter2.name + " has died. " + fighter1.name + " is victorious!");
+		return (console.log(fighter2.name + " has died. " + fighter1.name + " is victorious!"));
 	} else if (fighter1.hitpoints <= 0) {
 		// console.log(fighter1.name + " has died.", fighter2.name + " is victorious!");
-		return (fighter1.name + " has died. " + fighter2.name + " is victorious!")
-	} 
-	// function must run necessary amount of times for return value to be defined
-
+		return (console.log(fighter1.name + " has died. " + fighter2.name + " is victorious!"));
+	} else {
+		// run function again until end condition is met
+		battle(fighter1, fighter2);
+	}
+	// end condition if one of the fighters dies
+	
 	// cannot call function within itself until function ends and have final return value
-	// else {
-	// 	// run function again until end condition is met
-	// 	battle(fighter1, fighter2);
-	// }
+	
 };
 
-console.log(battle(adventurer, ogre));
+// setInterval(battle(adventurer, ogre), 10);
 
+battle(adventurer, ogre);
+
+// const repeatBattle = (fighter1, fighter2) => {
+// 	if (fighter1.hitpoints <= 0) {
+// 		battleEnd(adventurer, ogre);
+// 	} else if (fighter1.hitpoints <= 0) {
+// 		battleEnd(adventurer, ogre);
+// 	} else {
+// 		// function must run necessary amount of times for return value to be defined
+// 		battle(adventurer, ogre);
+// 	}
+// };	
 
 // EXTRA STUFF
 
