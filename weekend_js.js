@@ -126,6 +126,97 @@ ourClass[2] = "Octocat";
 //Add a new element, "Cloud City" to the array
 ourClass.push("Cloud City");
 
+//MIX IT UP
+const myArray = [5, 10, 500, 20];
+// Add "Egon"
+myArray.push("Egon");
+// Remove string
+myArray.pop();
+// unshift + add Bob Marley
+myArray.unshift("Bob Marley");
+// remove string with a different method
+myArray.shift();
+// reverse method on the array
+myArray.reverse(); //***This seems too simple. Was this what we were supposed to do? 
+
+//BIGGIE SMALLS
+const numSize = 260;
+if (numSize < 100){
+	console.log("little number")
+} else {
+	console.log("big number")
+}
+
+//MONKEY IN THE MIDDLE
+const monkeyNum = 2;
+if (monkeyNum < 5){
+	console.log("little number")
+} else {
+	if (monkeyNum > 10){
+		console.log("big number")
+	} else {
+		console.log("monkey")
+	}
+}
+
+//WHAT'S IN YOUR CLOSET?
+// What's Kristyn wearing today?
+console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
+// // // Remove left shoe from closet and save as kristynShoe.
+const kristynShoe = kristynCloset[0];
+kristynCloset.shift();
+// Add "rayBans" after "yellow knit hat"
+ristynsCloset.splice(6,0,"rayBans");
+// Modify "yellow knit hat" to "stained knit hat"
+kristynsCloset[5] = "stained knit hat";
+// Access a shirt for Thom
+thomsCloset[0][1];
+// Access pants for Thom
+thomsCloset[1][1];
+// Access an accesory for Thom
+thomsCloset[2][2];
+// Log sentence about what Thom is wearing
+console.log("Thom is looking fierce in a " + thomsCloset[0][1] + ", " + thomsCloset[1][1] + " and " + thomsCloset[2][2] + "!");
+// Modify Thom's PJ's to "Footie Pajamas"
+thomsCloset[1][2] = "Footie Pajamas";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
