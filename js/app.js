@@ -23,36 +23,43 @@ if (a === 1) {
 }
 
 
+
 //#4 Create a variable called `firstVariable`.
   //- assign it the value of a string => `"Hello World"`
-  // - change the value of this variable to a number.
-  // - store the value of `firstVariable` into a new variable called `secondVariable` 
-  // - change the value of `secondVariable` to a string.  
-  // - What is the value of `firstVariable`?
-
-let firstVariable = ("Hello World") //declare the number
-firstVariable = 6//assi =
-
-
-
- let secondVariable = firstVariable
- secondVariable = ''
-
-
-
+let firstVariable = ("Hello World") 
+console.log(firstVariable);
+Hello World
+undefined
+// - change the value of this variable to a number.
+firstVariable = 6
+6
+// - store the value of `firstVariable` into a new variable called `secondVariable` 
+let secondVariable = (firstVariable);
+// - change the value of `secondVariable` to a string.  
+secondVariable = ''
+""
+// - What is the value of `firstVariable`?
+firstVariable
+6
 
 ///#5 Create a variable called `yourName` and 
 //set it equal to your name as a string.
+let yourName = ("Noemi") 
+ console.log(yourName);
 //- Write an expression that takes the string 
 //"Hello, my name is " and the variable `yourName` 
+console.log("Hello my name is" + ' ' + 'Noemi');
 //so that it returns a new string with them concatenated. 
 //>ex: `Hello, my name is Jean Valjean`
- let yourName = "Noemi"
- //funt 2 parameter 1 with a string an one name
-
-	return(('Hello my name is') + yourName())
-}
-yourName('')
+///////////////////////////
+let yourName = ("Noemi") 
+ console.log(yourName);
+Noemi
+undefined
+console.log("Hello my name is" + ' ' + 'Noemi');
+Hello my name is Noemi
+undefined
+  //funt 2 parameter 1 with a string an one name
 
 ///#6 Using the provided variable definitions, 
 //replace the blanks with a mathematical or 
@@ -209,6 +216,110 @@ const evenNumb = () => {
 //between 1 - 100 multiplied by 2.
 // >Check your work! Your banck_account should have $10,100 in it.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////#13 ## Multiples of 3 and 5
+// If we list all the natural numbers below 10 that are multiples of 3 or 5,
+// we get 3, 5, 6 and 9. The sum of these multiples is 23.
+// Find the sum of all the multiples of 3 or 5 below 1000.
+// :clap: You just solved [Project Euler](https://projecteuler.net/problem=1) 
+//problem 1! :clap:
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////#14 ### Easy Does It
+// 1. Create an array that contains three quotes 
+//and store it in a variable called `quotes`.
+
+
+
+
+
+
+
+
+
+
+
+// #15 ### Random
+// Given the following array `const randomThings = [1, 10, "Hello", true]`
+
+// 1. how do you access the 1st element in the array?
+
+// 2. Change the value of `"Hello"` to `"World"`.
+
+//3. Check the value of the array to make sure it updated the array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//#16 ### We've Got Class
+// Given the following array `
+//const ourClass = ["Gizmo", "Zoom", "Github", "Slack"]`
+
+// 1. What would you write to access the 3rd element of the array?
+
+// 2. Change the value of "Github" to "Octocat"
+
+// 3. Add a new element, "Cloud City" to the array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #17 ### Mix It Up
+// 4. Given the following array `const myArray = [5 ,10 ,500, 20]`
+// 1. using the `push` method, add the string `"Egon"` to the end of the array.
+// 2. using a method, remove the string from the end of the array.
+// 3. using the `unshift` method, 
+//add the string `"Bob Marley"` to the beginning of the array
+// 4. using a different method, remove the string from the beginning of the array
+// 5. use the reverse method on this array
 
 
 
