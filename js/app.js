@@ -142,6 +142,16 @@ console.log("Sorry, you're too young")
 } 
 VM9110:2 16
 VM9110:4 Here are the keys
+
+
+
+
+
+
+
+
+
+
 ////#9 ## Just Loop It
 // 1) Write code that will print out 
 // all the numbers in the range 0 - 10.
@@ -155,9 +165,44 @@ const N = 4000;
 Array.apply(null, {length: N}).map(Number.call, Number)
 // 3) Write code that will print out 
 // every other number in the range 10 - 4000.
+let line = 100;
+let j = -1;
+for (i = 0; i <= 4000; i++) {
+    if (i % 2 == 1) {
+        j++;
+        if (j % 3 == 0) {
+            alert(i);
+        }
+    }
 
+
+ }
 
 ///////////////////
+let line = [];
+//you are uninterested in odd numbers, so increment the counter by 2
+for(let i = 0; i <= 4000; i = i + 2) {
+    line.push(i);
+    if((i + 2) % 5 === 0) { //every 5 lines print result
+        console.log(line);
+        line = []
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const range = [1-10];
 console.log(range);
 for (i = 0; i < 10; i++) {
@@ -178,6 +223,27 @@ for (i = 0; i < 10; i++) {
 ////#10## Let's get even
 // ## Let's get even
 // 1) Print out the even numbers that are within the range of 1 - 100.
+let line=[]
+
+for (let i = 2; i <= 100; i += 2) {
+  if (line.length == 5) {   //this prints out the even numbers by five
+    console.log(line);
+    line=[];
+  }
+  line.push(i);
+}
+console.log(line);
+
+///
+let line = [];
+for (let i = 2; i <= 100; i += 2) {
+  if (line.length == 1) {   //this prints out all the even numbers by one
+    console.log(line);
+    line=[];
+  }
+  line.push(i);
+}
+console.log(line);
 // 2) Adjust your code to add a message next to the even number that says:
 // "is an even number".
 
@@ -187,10 +253,21 @@ for (i = 0; i < 10; i++) {
 // 4 is an even number
 // 6 is an even number
 
-const evenNumb = () => {
- for (i%2 === 0){
-  console.log(i + "I found a `number`. High five!");
-}  
+var line = [];
+//you are uninterested in odd numbers, so increment the counter by 2
+for(var i = 0; i <= 4000; i = i + 2) {
+    line.push(i);
+    if((i + 2) % 5 === 0) { //every 5 lines print result
+        console.log(line);
+        line = []
+    }
+}
+
+
+
+
+
+
 
 
 
@@ -203,6 +280,13 @@ const evenNumb = () => {
 // ```
 // I found a 5. High five!
 // I found a 10. High five!
+const N = [100] => {
+ for (i % 2; i = 0){
+  console.log(i + "I found a `number`. High five!");
+}  
+
+
+
 // ```
 
 
