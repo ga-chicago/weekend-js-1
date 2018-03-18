@@ -122,7 +122,7 @@ let personAge = 16;
 console.log("Sorry, you're too young")
 } 
 Here are the keys
-
+///
 const personAge = 16;
 console.log(personAge)
   if (personAge <= 16){
@@ -131,35 +131,45 @@ console.log(personAge)
 console.log("Sorry, you're too young")
 }
 16 
+///
 
-
-let personAge = 16;
-console.log(personAge){
-
+let personAge = 16; {
+console.log(personAge);
 }if (personAge <= 16){
   console.log("Here are the keys")
 }else if(personAge > 16){
 console.log("Sorry, you're too young")
 } 
+VM9110:2 16
+VM9110:4 Here are the keys
 ////#9 ## Just Loop It
 // 1) Write code that will print out 
 // all the numbers in the range 0 - 10.
+const N = 11; 
+Array.apply(null, {length: N}).map(Number.call, Number)
 
+(11) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // 2) Write code that will print out 
 // all the numbers in the range 10 - 4000.
-
+const N = 4000; 
+Array.apply(null, {length: N}).map(Number.call, Number)
 // 3) Write code that will print out 
 // every other number in the range 10 - 4000.
 
 
+///////////////////
+const range = [1-10];
+console.log(range);
+for (i = 0; i < 10; i++) {
+  range = range + i;
+}
 
-
-
-
-
-
-
-
+const range = [1-10];
+console.log(range);
+for (i = 0; i < 10; i++) {
+  range = range + i;
+}
+[-9]
 
 
 
