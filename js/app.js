@@ -323,13 +323,133 @@ if(operation === "add") {
 console.log(calculate(4, 3, "sub"));
 console.log(calculate(4, 3, "exp"));
 
-
+//ONE
 //Write a function printCool that accepts one parameter, name as an argument.
 //The function should print the name and a message saying that that person is cool.
 const printCool = (name) => {
   return name + " is cool."
+}
 console.log(printCool("pizza"));
 
-
+//TWO
 //Write a function calculateCube that takes a single number
 //and prints the volume of a cube made from that number.
+
+const calculateCube = (num) => {
+  return (num * num) * num
+}
+console.log(calculateCube(5));
+
+//THREE
+//Write a function isAVowel that takes a character (i.e. a string of length 1)
+//and returns true if it is a vowel, false otherwise.
+///The vowel could be upper or lower case.
+const isAVowel = (letter) => {
+  if(letter == "A" || letter == "E" || letter == "I" || letter == "O" || letter == "U" ) {
+    return true;
+  } else if (letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u" ) {
+      return true;
+      } else {
+        return false;
+  }
+}
+console.log(isAVowel("a"));
+
+//FOUR
+//Write a function getTwoLengths that accepts two parameters (strings).
+//The function should return an array of numbers where each number is the length of the corresponding string.
+const getTwoLengths = (string1, string2) => {
+arrayOfLengths = [string1.length, string2.length];
+return arrayOfLengths
+}
+console.log(getTwoLengths("Hank", "Hippopopalous"));
+
+//FIVE
+//Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings.
+//The function should return an array of numbers where each number is the length of the corresponding string.
+const multipleLengths = (arrayOfStrings) => {
+  const arrayOfLengths = [];
+  for (i = 0; i < arrayOfStrings.length; i++) {
+    arrayOfLengths.push(arrayOfStrings[i].length)
+  }
+  return arrayOfLengths
+}
+console.log(arrayOfStrings = ["hello", "what", "is", "up", "dude"])
+
+//SIX
+//Define a function maxOfThree that takes three numbers as arguments and returns the largest of them.
+//If all numbers are the same, it doesn't matter which one is returned.
+//If the two largest numbers are the same, one of them should be returned.
+const maxOfThree = (num1, num2, num3) => {
+  const max = Math.max(num1, num2, num3)
+  return max
+}
+console.log(maxOfThree(6, 9, 1));
+
+//SEVEN
+//Write a function printLongestWord that accepts a single argument, an array of strings.
+//The method should return the longest word in the array.
+//In case of a tie, the method should return the word that appears first in the array.
+const printLongestWord = (arr) => {
+  // return the longest value in the array
+  let length = 0;
+  let longestStrLength = "";
+
+  for(let i = 0; i < arr.length; i++){
+        if(arr[i].length > length) {
+          length = arr[i].length;
+          longestStrLength = arr[i]
+        }
+  } return longestStrLength
+}
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+//EIGHT
+//Write a Javascript function called transmogrify.
+//This function should accept three arguments, which you can assume will be numbers.
+//Your function should return the "transmogrified" result.
+//The transmogrified result of three numbers is the product of the first two numbers,
+//raised to the power of the third number.
+
+const transmogrifier = (num1, num2, num3) => {
+  return (num1 * num2) ** num3
+}
+console.log(transmogrify(5, 3, 2));
+
+
+//Me
+//Create an empty object called me.
+//Assign it properties for name, age, and email with corresponding values.
+
+const me = {
+  name: "Zoe",
+  age: 26,
+  email: "zoereagan@gmail.com"
+}
+//Using dot notation, access the name property in your object.
+me.name
+//Without writing directly into the object, update the value of age to be 1000 years old.
+me.age = 1000
+//Using dot notation, verify that age has been updated.
+me.age
+//Add a key to this object called: "place of residence" and give it a value of your hometown.
+//Note that the key has spaces, therefore you cannot use dot notation.
+me["place of residence"] = "Portland"
+//Access the value of "place of residence"
+me["place of residence"]
+
+//Slimer
+const monster = {
+   name: "Slimer",
+   color: "greenish",
+   type: "plasm or ghost or something"
+}
+//What would you write to access the name and console.log it?
+monster.name
+//What would you write to change the type to 'creature' (without changing it inside the object)
+monster.type = "creature"
+//What would you write to add a key to the object called age, and set the age to 6?
+monster.age = 6
+//console.log the object to make sure type is creature, and age is 6
+monster
+{name: "Slimer", color: "greenish", type: "creature", age: 6}
