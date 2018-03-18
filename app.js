@@ -139,17 +139,17 @@ for(i = 0; i <= 100; i++) {
 //1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
 // let bank_account = 0;
 
-// for(bank_account = 0; bank_account <= 55; bank_account++) {
-// 	console.log(bank_account += 1)
-// }
+for(bank_account = 0; bank_account <= 55; bank_account++) {
+	console.log(bank_account += 1)
+}
 
-// //2. You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers 
-// //between 1 - 100 multiplied by 2.
-// let bank_account = 0;
+//2. You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers 
+//between 1 - 100 multiplied by 2.
+let bank_account = 0;
 
-// for(bank_account = 0; bank_account <= 10100; bank_account++) {
-// 	console.log(bank_account += 1)
-// }
+for(bank_account = 0; bank_account <= 10100; bank_account++) {
+	console.log(bank_account += 1)
+}
 
 
 // MULTIPLES OF 3 AND 5
@@ -324,8 +324,25 @@ console.log('Thom is looking fierce in a ' + thomsCloset[0][0] + ", " + thomsClo
 thomsCloset[1][2] = "Footie Pajamas"
 
 
+// FUNCTIONS
+// printGreeting
+const printGreeting = (name) => {
+	console.log("Hello there, " + name + "!")
+}
 
+//reverseWordOrder
+ const reverseWordOrder = (input) => {
+	// function splitString(input, separator) {
+	let newString = input.split(" ");
+	let reversedString = "";
+	for(i = 0; i < newString.length; i++) {
+		reversedString = newString[i] + " " + reversedString
+	}
+	finalString = reversedString.slice(0, reversedString.length - 1)
+	return finalString
+}
 
+console.log(reverseWordOrder("Ishmael me Call"))
 
 
 
