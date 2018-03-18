@@ -464,6 +464,44 @@ me["place of residence"] = "Bloomington";
 me["place of residence"]; //<--- returns "Bloomington"
 
 
+//Slimer
+const monster = {
+   name: "Slimer",
+   color: "greenish",
+   type: "plasm or ghost or something"
+}
+// Given the slimer object:
+// 		What would you write to access the name and console.log it?
+console.log(monster.name)
+
+// 		What would you write to change the type to 'creature' (without changing it inside the object)
+monster.type = "creature";
+
+// 		What would you write to add a key to the object called age, and set the age to 6?
+monster.age = 6;
+
+// 		console.log the object to make sure type is creature, and age is 6
+console.log(monster.type) //<--- returns "creature"
+console.log(monster.age) //<--- returns 6
+
+
+//Ogres
+// How would you model your adventurer? Your adventurer will want a name and hitpoints. 
+// What else would your adventurer need?
+const adventurer = {
+	name: "Russell",
+	hitpoints: 160,
+	age: 25,
+	belongings: "shield", "sword", "canteen"
+}
+
+// How would you model an ogre? Your ogre will want hitpoints.
+const ogre = {
+	hitpoints: 200,
+	color: "greenish",
+	belongings: "club",
+	type: "mean"
+}
 
 
 
