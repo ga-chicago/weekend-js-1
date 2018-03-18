@@ -92,14 +92,22 @@ console.log(48 == '48'); ///console.log(48 == '48'); true
 //2) Change your code so that if the variable `animal` 
 //is anything other than a cow, 
 //your should print out "Hey! You're not a cow."
-const animal = ("mooooo");
+let animal = ('cow') => {
+  console.log(animal);
+} if(animal = cow) {
+  console.log("mooooo");
+} else if (animal != cow){
+ console.log("Hey you are not a cow");
+}
+////////
+const animal = ('cow'); 
+console.log(animal);
 if(animal = cow){
-console.log("mooooo")
-}else if(animal != cow)
-console.log("Hey you are not a cow"){
-  else{} 
-};
-
+  console.log("mooooo")
+}else if (animal != cow){
+ console.log("Hey you are not a cow")
+ 
+}
 
 ///#8## Driver's Ed
 //1) Write a variable that will hold a person's age.
@@ -108,13 +116,31 @@ console.log("Hey you are not a cow"){
 //3)Change your code so that if the age is younger than 16, 
 //a message will print "Sorry, you're too young."
 let personAge = 16;
-  if (personAge <= 16) {
+  if (personAge <= 16){
   console.log("Here are the keys")
-} esle {
+}else if(personAge > 16){
 console.log("Sorry, you're too young")
 } 
+Here are the keys
+
+const personAge = 16;
+console.log(personAge)
+  if (personAge <= 16){
+  console.log("Here are the keys")
+}else if(personAge > 16){
+console.log("Sorry, you're too young")
+}
+16 
 
 
+let personAge = 16;
+console.log(personAge){
+
+}if (personAge <= 16){
+  console.log("Here are the keys")
+}else if(personAge > 16){
+console.log("Sorry, you're too young")
+} 
 ////#9 ## Just Loop It
 // 1) Write code that will print out 
 // all the numbers in the range 0 - 10.
