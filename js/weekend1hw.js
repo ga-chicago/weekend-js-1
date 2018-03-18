@@ -106,7 +106,7 @@ let age = 14;
 
 	for(i = 10; i <= 4000; i++)
 		if(i % 2 === 0)
-		console.log([i])	// FIX THIS FIX THIS FIX THIS // WHAT DOES THIS MEAN
+		console.log([i]) // prints out all even numbers 
 
  
 
@@ -405,4 +405,437 @@ thomsCloset[2][1];
 console.log("Thom is looking fierce in a " + thomsCloset[0][0] + ", " + thomsCloset[1][1] + " and " + thomsCloset[2][1])
 
 // Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
+
+thomsCloset[1][2] = "Footie Pajams"
+
+
+// printGreeting
+// Write a function called printGreeting with a parameter name that returns a greeting with the argument interpolated into the greeting.
+
+// console.log(printGreeting("Slimer"));
+// => Hello there, Slimer!
+
+
+const printGreeting = (name) => {
+	return "Hello There, " + name 
+}
+
+printGreeting("Slimer");
+
+
+
+// Write a function reverseWordOrder that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation.
+
+
+const reverseWordOrder = (str) => {
+	let splitStr = str.split(" ")
+	return splitStr.reverse().join(" ")
+
+}
+reverseWordOrder("Ishmael, me, Call"); 
+
+//  calculate
+// Write a function called calculate.
+
+// This function should take three arguments, two numbers and a string.
+
+// Name the parameters num1, num2, and operation.
+
+// If the function receives the string "add" for the operation parameter, it will return the sum of num1 and num2.
+
+// If the function receives the string "sub" for the operation parameter, it will return num1 minus num2.
+
+const calculate = (num1, num2, operation) => {
+	if (operation === "add") {
+		return num1 + num2
+	} else if (operation === "sub") {
+		return num1 - num2 
+	} else if (operation === "mult") {
+		return num1 * num2
+	} else if (operation === "div") {
+		return num1 / num2
+	} else (operation === "exp") 
+		return num1 ^ num2 
+	
+
+}
+
+calculate(4, 5, "add") // works 
+
+
+// Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
+
+const printCool = (name) => {
+	return(name + " is cool ")
+
+}
+
+printCool("Sam")
+
+
+
+// Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
+
+const calculateCube = (num) => {
+	return num * num * num;
+}
+
+calculateCube(5)
+
+
+
+// Write a function isAVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
+
+const isAVowel = (letter) => {
+	if(letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u") {
+		return true 
+	} else if (letter === "A" || letter === "E" || letter === "I" || letter === "O" || letter === "U"){
+		return true  
+	} else {
+		return false
+	}
+
+}
+
+isAVowel("A")  // Not sure this is the BEST way to do it. 
+
+
+// Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
+// => [4, 13]
+
+	
+const getTwoLengths = (a, b) => {
+	console.log(a.length, b.length)
+
+}
+
+console.log(getTwoLengths("Hank","Hippopopalous"));  // When I used return it only showed length of second value
+
+
+// Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+// => [5, 4, 2, 2, 4]
+
+
+const getMultipleLengths = (array) => {
+	let newArray = [];  // new array that will contine length of the words 
+	for(let i = 0; i < array.length; i++) { // looping through length of words
+		newArray.push(array[i].length); 
+	}
+
+	return newArray;
+} 
+
+
+
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+
+// Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
+
+// console.log(maxOfThree(6, 9, 1));
+// => 9
+
+
+const maxOfThree = (a, b, c) => {
+	return Math.max(a, b, c)
+}
+
+maxOfThree(1, 2, 12)
+
+
+
+// Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+// // => "Peanutbutter"
+
+const printLongestWord = (array) => {
+	let long = 0;
+
+	let longest = "";
+
+	for(let i = 0; i < array.length; i++) 
+		if(array[i].length > long) {
+		console.log(array[i].length)
+		let = array[i].length;
+		longest = array[i]	// this is showing LAST strong not longest
+		}
+
+	console.log(longest)	
+	return longest;	
+
+}
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+// this return LAST string // FIX THIS FIX THIS  FIX THIS  FIX THIS  FIX THIS  FIX THIS 
+
+
+
+// Write a Javascript function called transmogrify. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
+
+// The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
+
+// For example, the transmogrified result of 5, 3, and 2 is (5 times 3) to the power of 2 is 225.
+
+// console.log(transmogrify(5, 3, 2));
+
+const transmogrifier = (num1, num2, num3) => {
+	let message = Math.pow((num1*num2), num3); // function that raises to the num3 power
+
+	// The transmogrified result of three numbers is the product (numbers multiplied together) of the first two numbers, raised to the power (exponentially) of the third number.
+
+	return message; 
+
+
+}
+
+transmogrifier(5,3,2); // 225
+
+// Objects
+// Syntax
+// List and describe each individual piece of syntax that we use to construct an object. Don't leave anything out! The list is finite.
+
+// Example:
+
+
+// {} curly braces define the object.
+
+Objects have has methods and properties
+
+the {} define the object.
+
+var person = {firstName:"Sam", lastName:"Mintz", age:25, eyeColor:"brown"};
+
+The properties in an object would be would be firstName, lastName & eyeColor
+
+the value of the properties would be "Sam", "Mintz", "brown"
+
+Methods are actions that can be performed on objects
+
+you can access the first name property in the person object by person.firstName; 	
+
+
+
+// Create an empty object called me.
+// Assign it properties for name, age, and email with corresponding values.
+// The object would look something like this if we console logged it:
+
+// console.log(me)
+
+var me = {
+	name: "Sam",
+	age: 25,
+	email: "Sammintz1993@gmail.com"
+}
+
+console.log(me)
+
+{name: "Sam", age: 25, email: "Sammintz1993@gmail.com"}
+
+
+// Using dot notation, access the name property in your object.
+
+me.name
+
+// Without writing directly into the object, update the value of age to be 1000 years old.
+
+me.age = 100;
+
+
+// Using dot notation, verify that age has been updated.
+
+me.age 
+
+100
+
+// Add a key to this object called: "place of residence" and give it a value of your hometown. Note that the key has spaces, therefore you cannot use dot notation.
+
+me["place of residence"] = "Chicago"
+
+
+// Access the value of "place of residence"
+
+me["place of residence"];
+
+const monster = {
+   name: "Slimer",
+   color: "greenish",
+   type: "plasm or ghost or something"
+}
+// Given the slimer object:
+// What would you write to access the name and console.log it?
+monster.name
+
+console.log(monster.name);
+
+// What would you write to change the type to 'creature' (without changing it inside the object)
+
+monster.type = "creature"
+
+// What would you write to add a key to the object called age, and set the age to 6?
+
+monster.age = 6;
+
+// console.log the object to make sure type is creature, and age is 6
+
+console.log(monster.age)
+
+
+// Ogres
+// Let's say you want to make an adventure game where you are an adventurer and you are going to fight ogres.
+
+// Using objects, create models and have them interact.
+
+// how would you model your adventurer? Your adventurer will want a name and hitpoints. What else would your adventurer need?
+
+// how would you model an ogre? Your ogre will want hitpoints.
+
+// Write a very small program that will simulate a battle between your adventurer and an ogre. You can use the same techniques you used in your landscaping game from the weekend.
+
+// When your adventurer's hitpoints reach 0 the game is over.
+// When your ogre's hitpoints reach 0 the game is over.
+// If you want to provide input to the game, you can run it in the Chrome console (but that isn't strictly necessary for now).
+
+
+const game = {
+	adventurer: {name: "Sam",
+				age: 25,
+				weight: 180,
+				weapons: ["stick", "knife", "bow and arrow", "sheild"],
+				hitpoints: ["head", "chest", "legs"],
+				health: 100		
+
+			},	
+
+	ogre: {name: "Dennis",
+			weight: 385,
+			color: "green",
+			weapons: ["club", "knife", "ax"],
+			hitpoints: ["head", "chest", "legs"],
+			health: 100,
+
+		}
+}
+
+
+
+// I am not sure this is what you are looking for. I have set up my adventurer and agre.
+
+// The fight  
+
+Using the bow and arrow Sam shoots the ogre in the chest bringing his health to 65 
+
+game.adventurer.weapons[2] // brings up the bow and arrow 
+
+game.orge.health = 65;
+
+// Using the club, the agre hits sam and brings his health downto 45
+
+game.adventurer.weapons[0]
+
+game.adventurer.health = 45;
+
+// using the ax the orge tries to hit Sam but its him in a non hitpoint, the arm.
+
+game.adventurer.weapons[2]
+
+// Using the knife, Sam stabs the ogre in the head bringing health to 0
+
+game.adventurer.weapons[1]
+
+game.orge.health = 0;
+
+// Fairly confident this isnt what you guys were looking for but I wanted to try something. Here I am just interating through my object has the values are needed.
+
+// EXTRA STUFF
+
+// Cat Combinator
+// 1. Mama cat
+// Define an object called cat1 that contains the following properties:
+
+// name
+// breed
+// age (a number)
+// console.log the cat's age
+
+// console.log the cat's breed
+
+
+const cat1 = {
+	name: "Bob",
+	breed: "persian",
+	age: 4
+}
+
+// cat1.name;
+
+// cat1.breed;
+
+const cat2 = {
+	name: "Joe",
+	breed: "persian",
+	age: 8
+}
+
+const combineCats = (mama, papa) => {
+
+console.log(mama, papa)
+
+
+
+
+}
+
+combineCats(cat1, cat2)
+
+// need to define OUTSIDE of function I believe for this to work // Works as is
+
+
+// Make it so the combineCats function will return a combination of the two incoming cats
+// The result should be an object wherein the
+// name is a concatenation of the parents' names
+// the age is 1
+// the breed is each of the parents' breeds with a hyphen in between
+
+
+cat1.name + cat2.name 
+
+age = 1
+
+cat1.breed + "-" + cat2.breed
+
+
+
+const cat1 = {
+	name: "Bob",
+	breed: "persian",
+	age: 4
+}
+
+
+
+const cat2 = {
+	name: "Joe",
+	breed: "persian",
+	age: 8
+}
+
+
+const combineCats = (mama, papa) => {
+
+// console.log(mama, papa)
+console.log(cat1.name + cat2.name + cat1.breed + "-" + cat2.breed)
+
+
+
+
+}
+
+combineCats(cat1, cat2)
+
 
