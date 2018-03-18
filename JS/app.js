@@ -433,6 +433,8 @@ console.log(transmogrify(5,3,2));
 
 
 // Syntax
+
+
 // {} curly braces define object
 // eye color: 'Blue',  //Example of a property
 //eye:   // example of key
@@ -442,6 +444,132 @@ console.log(transmogrify(5,3,2));
 //object will not equal object because they have different addresses in your RAM
 // You can access objects with dot notation or bracket notation
 // to loop through an object, you have to use for ... in loop
+
+
+
+
+
+// Me
+
+const me = {};
+
+me.name = 'Amjad';
+me.age = 21;
+me.email = 'amjad.hamdi.ali@gmail.com';
+
+console.log(me);
+
+console.log(me.name);
+me.age = 1000;
+console.log(me.age);
+
+me['place of residence']='Burbank';
+
+console.log(me);
+
+console.log(me['place of residence']);
+
+
+// Slimer
+
+const monster = {
+   name: "Slimer",
+   color: "greenish",
+   type: "plasm or ghost or something"
+}
+
+console.log(monster.name);
+
+monster.type = 'Creature';
+
+console.log(monster);
+
+monster.age = '6';
+
+console.log(monster);
+
+
+// Ogres
+
+const adventurer = {
+	name:'David',
+	belongings: ['helmet','sheild','sword','food'],
+	hitpoints: 10,
+	type:'human',
+	age: 24,
+	'sword swings': 25
+};
+
+const ogre = {
+	name:'Shrek',
+	type: 'ogre',
+	age:104,
+	characteristic: ['evil','ugly','sharp teeth'],
+	residence: 'forest',
+	hitpoints: 20
+}
+
+
+const battle = (obj1,obj2)=>{
+	for (let i = 1; i <= obj1['sword swings']; i ++){
+			obj2.hitpoints -=1;
+
+			if(obj2.hitpoints === 0){
+				obj1['sword swings'] = obj1['sword swings']-i;	
+				console.log('Congratulations, you defeated the ogre!');
+				console.log('You have ' + obj1['sword swings'] + ' sword swings remaining.');
+				break;
+			}
+
+			else{
+				console.log('No sword swings left. You did not defeat the ogre!')
+			}
+	}
+}
+
+battle(adventurer,ogre);
+
+
+
+
+// Extra Stuff
+
+const cat1 = {
+	name: 'fluffy',
+	breed: 'mane coon',
+	age: 4
+}
+
+
+console.log(cat1.age);
+console.log(cat1.breed);
+
+
+const cat2 = {
+	name: 'papa',
+	breed: 'long hair',
+	age: 9
+}
+
+
+const combineCats = (mama,papa)=>{
+	console.log(mama);
+
+	console.log(papa);
+
+
+	return {
+		name: mama.name + papa.name,
+		age: 1,
+		breed: mama.breed + '-'+ papa.breed
+	}
+}
+
+
+console.log(combineCats(cat1,cat2));
+
+// Recursion
+console.log(combineCats(combineCats(combineCats(cat1,cat2),combineCats(cat1,cat2)),combineCats(combineCats(cat1,cat2),combineCats(cat1,cat2))))
 
 
 
