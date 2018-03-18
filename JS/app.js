@@ -413,6 +413,7 @@ const printLongestWord = (array)=>{
 		//to place in list before tie breaker
 		if(newWordArray[array[i].length] !== undefined){
 			newWordArray.splice(newWordArray[array[i].length],0,array[i]);
+			console.log('There was a tie breaker, but here is the first one.')
 		}
 		else{
 			newWordArray[array[i].length]=array[i];
@@ -425,8 +426,26 @@ console.log(printLongestWord(['Onomatopoeia','formation','of','embezzlement','so
 
 // 8
 const transmogrify = (num1,num2,num3)=>{
-	
+	return Math.pow((num1*num2),num3);
 }
+console.log(transmogrify(5,3,2));
+
+
+
+// Syntax
+// {} curly braces define object
+// eye color: 'Blue',  //Example of a property
+//eye:   // example of key
+//'Blue'  // example of value
+//Objects can contain any datatype
+//When they do they are called data structures
+//object will not equal object because they have different addresses in your RAM
+// You can access objects with dot notation or bracket notation
+// to loop through an object, you have to use for ... in loop
+
+
+
+
 
 
 
