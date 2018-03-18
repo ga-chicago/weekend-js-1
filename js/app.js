@@ -1,7 +1,4 @@
-
-
-
-
+console.log("friday homework")
 
 
 //#1 How do we assign a value to a variable?
@@ -296,36 +293,49 @@ const N = [100] => {
 //between 1 - 100 multiplied by 2.
 // >Check your work! Your banck_account should have $10,100 in it.
 
-
-
-
-
-
-
-
-
-
-
-
+let bank_account = [0];
+let sum = (num1, num2) => {
+  console.log(sum)
+bank_account = sum;
+}
+for (i =0; i < 55; i++);
+if(i <= 55) 
 
 
 
 //////#13 ## Multiples of 3 and 5
 // If we list all the natural numbers below 10 that are multiples of 3 or 5,
 // we get 3, 5, 6 and 9. The sum of these multiples is 23.
+let sum = 0;
+for (let x = 0; x < 10; x++)
+{
+    if (x % 3 === 0 || x % 5 === 0)
+    {
+       sum += x;
+    }
+}
+console.log(sum);
+ 23
+undefined
+
+
+
+
+
 // Find the sum of all the multiples of 3 or 5 below 1000.
 // :clap: You just solved [Project Euler](https://projecteuler.net/problem=1) 
 //problem 1! :clap:
-
-
-
-
-
-
-
-
-
-
+let sum = 0;
+for (let x = 0; x < 1000; x++)
+{
+    if (x % 3 === 0 || x % 5 === 0)
+    {
+       sum += x;
+    }
+}
+console.log(sum);
+233168
+undefined
 
 
 
@@ -340,13 +350,6 @@ const quotes = ['really nice', 'good try', 'almost there'];
 console.log(quotes);
 (3) ["really nice", "good try", "almost there"]
 undefined
-
-
-
-
-
-
-
 
 
 // #15 ### Random
@@ -371,37 +374,471 @@ console.log(randomThings)
 const ourClass = ["Gizmo", "Zoom", "Github", "Slack"];
 console.log(ourClass[2])
 // 2. Change the value of "Github" to "Octocat"
-
+ourClass[2] = "Octocat";
 // 3. Add a new element, "Cloud City" to the array.
+ourClass.push("Cloud City");
+console.log(ourClass) 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+2 Github
+(5) ["Gizmo", "Zoom", "Octocat", "Slack", "Cloud City"]
+undefined
 
 // #17 ### Mix It Up
 // 4. Given the following array `const myArray = [5 ,10 ,500, 20]`
+const myArray = [5 ,10 ,500, 20];
 // 1. using the `push` method, add the string `"Egon"` to the end of the array.
+console.log(myArray)
+myArray.push("Egon");
 // 2. using a method, remove the string from the end of the array.
+console.log( myArray.pop() );
+console.log( myArray );
 // 3. using the `unshift` method, 
 //add the string `"Bob Marley"` to the beginning of the array
+myArray.unshift( "Bob Marley" )
+console.log( myArray)
 // 4. using a different method, remove the string from the beginning of the array
+console.log( myArray.shift() );
+console.log( myArray );
 // 5. use the reverse method on this array
 
 
+//////////////////////////////////////////
+const myArray = [5 ,10 ,500, 20];
+// 1. using the `push` method, add the string `"Egon"` to the end of the array.
+console.log(myArray)
+myArray.push("Egon");
 
+VM91:3 (4) [5, 10, 500, 20]
+5
+console.log(myArray)
+VM93:1 (5) [5, 10, 500, 20, "Egon"]
+undefined
+console.log( myArray.pop() );
+console.log( myArray );
+VM95:1 Egon
+VM95:2 (4) [5, 10, 500, 20]
+undefined
+myArray.unshift( "Bob Marley" );
+console.log( myArray);
+VM97:2 (5) ["Bob Marley", 5, 10, 500, 20]
+undefined
+console.log( myArray.shift() );
+console.log( myArray );
+VM99:1 Bob Marley
+VM99:2 (4) [5, 10, 500, 20]
+undefined
+
+
+// ### Biggie Smalls
+// Write an `if..else` statement:
+
+// 1. console.log `little number` if the number is entered is less than **100**
+
+// 2. If the number entered is 100 or more, alert `big number`.
+
+// ### Monkey in the Middle
+// Write an `if...else if...else` statement:
+
+// 1. console.log `little number` if the number entered is less than **5**.<br>
+
+// 2.  If the number entered is more than 10, log `big number`.
+
+// 3. Otherwise, console.log "monkey". <br>
+
+// ### What's in Your Closet?
+
+// Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
+
+//```javascript
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+console.log(kristynsCloset)
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+console.log(thomsCloset)
+
+// 1. What's Kristyn wearing today? Using bracket notation to access items in `kristynsCloset`,
+// log the sentence "Kristyn is rocking that " + *the third item in Kristyn's closet* + " today!" to the console.
+console.log("Kristyn is rocking that " + (kristynsCloset[2]) + " today!")
+// 2. Kristyn can't find her left shoe. Remove this item from her closet and save it to a variable named `kristynShoe`.
+console.log( kristynsCloset.shift() ); 
+const kristynsShoe = [];
+
+// 3. Kristyn just bought some sweet shades! Add `"raybans"` to her closet **after `"yellow knit hat"`.**
+kristynsCloset.push("raybans");
+
+// 4. Kristyn spilled coffee on her hat... modify this item to read `"stained knit hat"` instead of yellow.
+kristynsCloset[4] = ["stained knit hat"];
+kristynsCloset
+
+// 5. Put together an outfit for Thom! Using **bracket notation**, access the first element in Thom's `shirts` array.
+console.log(thomsCloset)
+// 6. In the same way, access one item from Thom's pants array.
+
+// 7. Access one item from Thom's accessories array.
+
+// 8. Log a sentence about what Thom's wearing. Example: `"Thom is looking fierce in a grey button-up, jeans and wool scarf!"`
+
+// 9. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to `Footie Pajamas`.
+
+
+// ## Functions
+
+
+// ### printGreeting
+
+// Write a function called `printGreeting` with a parameter `name` that returns a greeting with the argument **interpolated** into the greeting.
+
+// ```javascript
+// console.log(printGreeting("Slimer"));
+// ```
+
+// > => Hello there, Slimer!
+
+// <br>
+// <hr>
+
+// ### reverseWordOrder
+
+// Write a function `reverseWordOrder` that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation.
+
+// ```javascript
+// console.log(reverseWordOrder("Ishmael me Call"));
+// ```
+
+// > => "Call me Ishmael"
+
+
+// ```
+// console.log(reverseWordOrder("I use Lâncome on my comb"));
+// ```
+
+// > => "comb my on Lâncome use I"
+
+
+// <br>
+// <hr>
+
+// ### calculate
+
+// Write a function called `calculate`.
+
+// This function should take three arguments, two numbers and a string.
+
+// Name the parameters `num1`, `num2`, and `operation`.
+
+// If the function receives the string "add" for the operation parameter, it will return the sum of num1 and num2.
+
+// If the function receives the string "sub" for the operation parameter, it will return num1 minus num2.
+
+// Do the same thing for multiplication "mult", division "div", and exponent "exp" (where num2 is the exponent of num1).
+
+// ```javascript
+// console.log(calculate(4, 3, "sub"));
+
+// => 1
+// ```
+
+// ```javascript
+// console.log(calculate(4, 3, "exp"));
+
+// => 64
+// ```
+
+// <br>
+// <hr>
+
+
+// # 1 
+
+// Write a function `printCool` that accepts one parameter, `name` as an argument. The function should print the name and a message saying that that person is cool.
+
+// ```javascript
+// console.log(printCool("Captain Reynolds"));
+// ```
+
+// > => "Captain Reynolds is cool";
+
+// # 2
+
+// Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
+
+// ```javascript
+// console.log(calculateCube(5));
+// ```
+
+// > => 125
+
+
+// # 3
+
+// Write a function `isAVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
+
+// ```javascript
+// console.log(isAVowel("a"));
+// ```
+
+// > => true
+
+
+// # 4
+
+// Write a function `getTwoLengths` that accepts two parameters (strings). The function should return an _array_ of numbers where each number is the length of the corresponding string.
+
+// ```javascript
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
+// ```
+
+// > => [4, 13]
+
+
+// # 5 
+
+// Write a function `getMultipleLengths` that accepts a single parameter as an argument: an **array** of **strings**. The function should return an array of **numbers** where each number is the length of the corresponding string.
+
+
+// ```javascript
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+// ```
+
+// > => [5, 4, 2, 2, 4]
+
+
+// # 6
+
+// Define a function `maxOfThree` that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
+
+// ```javascript
+// console.log(maxOfThree(6, 9, 1));
+// ```
+
+// > => 9
+
+
+// # 7
+
+// Write a function `printLongestWord` that accepts a single argument, an **array** of **strings**. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+
+// ```javascript
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+// ```
+
+// > => "Peanutbutter"
+
+
+// # 8
+
+// Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
+
+// The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
+
+// For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the
+// power of 2` is 225.
+
+// ```javascript
+// console.log(transmogrify(5, 3, 2));
+// ```
+
+// > => 225
+
+
+
+// ### Objects
+
+// ## Syntax
+
+// List and describe each individual piece of syntax that we use to construct an object. Don't leave anything out! The list is finite.
+
+// Example:
+
+// ```
+// {} curly braces define the object.
+// ```
+
+// <br>
+// <hr>
+
+// ## Me
+
+// 1. Create an empty object called `me`.<br>
+// 2. Assign it properties for **name**, **age**, and **email** with corresponding values.<br>
+
+// The object would look something like this if we console logged it:
+
+// ```javascript
+// console.log(me);
+// ```
+
+// > => {name: "Kristyn", age: 98, email: "kristyn@foo.bar"}
+
+
+// 3. Using dot notation, access the **name** property in your object.<br>
+// 4. Without writing directly into the object, update the value of **age** to be 1000 years old.<br>
+// 5. Using dot notation, verify that **age** has been updated.<br>
+// 6. Add a key to this object called: "place of residence" and give it a value of your hometown. Note that the key has spaces, therefore you cannot use dot notation.
+// 6. Access the value of "place of residence"<br>
+
+// <br>
+// <hr>
+
+// ## Slimer
+
+// ```javascript
+// const monster = {
+//    name: "Slimer",
+//    color: "greenish",
+//    type: "plasm or ghost or something"
+// }
+// ```
+
+// * Given the **slimer** object:
+//     - What would you write to access the `name` and console.log it?
+//     - What would you write to change the `type` to 'creature' (without changing it inside the object)
+//     - What would you write to add a key to the object called `age`, and set the age to 6?
+//     - console.log the object to make sure `type` is creature, and `age` is 6
+
+// <br>
+// <hr>
+
+// ## Ogres
+
+// Let's say you want to make an adventure game where you are an adventurer and you are going to fight **ogres**.
+
+// Using **objects**, create **models** and have them interact.
+
+// * how would you model your `adventurer`? Your adventurer will want a **name** and **hitpoints**. What else would your adventurer need?
+// * how would you model an `ogre`? Your ogre will want **hitpoints**.
+
+// * Write a very small program that will simulate a battle between your adventurer and an ogre. You can use the same techniques you used in your **landscaping** game from the weekend.
+//   * When your adventurer's hitpoints reach 0 the game is over.
+//   * When your ogre's hitpoints reach 0 the game is over.
+
+// * If you want to provide input to the game, you can run it in the Chrome console (but that isn't strictly necessary for now).
+
+// <br>
+// <hr>
+
+// # EXTRA STUFF
+
+// ## Cat Combinator
+
+// ### 1. Mama cat
+// * Define an object called `cat1` that contains the following properties:
+//   * name
+//   * breed
+//   * age (a number)
+
+// * console.log the cat's age
+// * console.log the cat's breed
+
+
+// ### 2. Papa cat
+// * Define an object called `cat2` that also contains the properties:
+//   * name
+//   * breed
+//   * age (a number)
+
+
+// ### 3. Combine Cats!
+
+// The cats are multiplying!
+
+// Write a function `combineCats` that has two parameters `mama`, and `papa`. The function will take two arguments -- each a cat object.
+
+// * Pass `cat1` and `cat2` as arguments to the `combineCats` function. The function should console.log them.
+
+// Example:
+
+// ```javascript
+// combineCats(cat1, cat2)
+// ```
+
+// > { name: "Joe", age: 19, breed: "Mog" }
+
+// > { name: "Jam", age: 45, breed: "Siamese" }
+
+
+// **This is to demonstrate that functions can take objects as arguments**
+
+// You could also invoke the `combineCats` function by writing the objects straight into the parentheses:
+
+// ```javascript
+// combineCats({ name: "Craig", age: 20, breed: "unknown" }, { name: "Linda", age: 20, breed: "undefined" });
+// ```
+// <br>
+
+// * Make it so the `combineCats` function will return a combination of the two incoming cats
+//   * The result should be an object wherein the
+//     * name is a concatenation of the parents' names
+//     * the age is 1
+//     * the breed is each of the parents' breeds with a hyphen in between
+
+// Example:
+
+// ```javascript
+// console.log(combineCats(cat1, cat2));
+// ```
+
+// Result:
+
+// ![](https://i.imgur.com/CEB2ire.png)
+
+// **This is to demonstrate that a function can return an object**
+
+// <br>
+// <hr>
+
+// ## 4. Cat brain bender
+
+// If `catCombinator` returns an **object**, and if `catCombinator` takes **objects** as **arguments**, then it stands to reason that:
+
+// `catCombinator` can use **itself** as its own argument.
+
+// Take a second to stew on that . . .
+
+// What is the result of:
+
+// ```javascript
+// console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+// ```
+
+// Whoa . . .
+
+// The above console.log is **two levels** deep of combineCats.
+
+// * Write a console.log that is **three levels** deep of combineCats. combineCats should have two arguments, each which are combineCats, each which have two arguments, each which are combineCats.
+
+// Your output should look something like:
+
+// ![](https://i.imgur.com/zuTzm5X.png)
+
+// <br>
+// <hr>
 
 
 
