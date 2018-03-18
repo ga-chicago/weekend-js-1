@@ -190,36 +190,6 @@ for(let i = 0; i <= 4000; i = i + 2) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-const range = [1-10];
-console.log(range);
-for (i = 0; i < 10; i++) {
-  range = range + i;
-}
-
-const range = [1-10];
-console.log(range);
-for (i = 0; i < 10; i++) {
-  range = range + i;
-}
-[-9]
-
-
-
-
-
 ////#10## Let's get even
 // ## Let's get even
 // 1) Print out the even numbers that are within the range of 1 - 100.
@@ -253,9 +223,9 @@ console.log(line);
 // 4 is an even number
 // 6 is an even number
 
-var line = [];
+let line = [];
 //you are uninterested in odd numbers, so increment the counter by 2
-for(var i = 0; i <= 4000; i = i + 2) {
+for(let i = 0; i <= 4000; i = i + 2) {
     line.push(i);
     if((i + 2) % 5 === 0) { //every 5 lines print result
         console.log(line);
@@ -263,11 +233,18 @@ for(var i = 0; i <= 4000; i = i + 2) {
     }
 }
 
+///////////////////////////////////////////////////
+const num = [];
+for(let i=0; i <= 100; i++){
+  console.log(num[i])
+  if (numb[i] %2 === 0){
+    console.log(numb[i] + "is even")
+    else{
+      console.log(numb[i] + 'is odd')
 
+    }
 
-
-
-
+}
 
 
 
@@ -278,29 +255,23 @@ for(var i = 0; i <= 4000; i = i + 2) {
 
 // >Example Output:
 // ```
+function solution(number) {
+   let num = 0;
+    for (let i = 0; i < number; i++)
+    {
+      if (i % 3 === 0)
+        console.log("I found a `number` High five!") 
+      else if(i % 5 === 0)
+        console.log()
+        {
+        
+
 // I found a 5. High five!
 // I found a 10. High five!
 const N = [100] => {
  for (i % 2; i = 0){
   console.log(i + "I found a `number`. High five!");
 }  
-
-
-
-// ```
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // 2) Add to the code from above to print out 
 //"I found a `number`. Three is a crowd" if the number is a multiple of three.
@@ -312,17 +283,6 @@ const N = [100] => {
 // I found a 6. Three is a crowd
 // I found a 9. Three is a crowd
 // I found a 10. High five!
-```
-// ```
-
-
-
-
-
-
-
-
-
 
 
 
@@ -372,8 +332,14 @@ const N = [100] => {
 ///////#14 ### Easy Does It
 // 1. Create an array that contains three quotes 
 //and store it in a variable called `quotes`.
+const quotes = ['', '', ''];
+console.log(quotes);
 
-
+//////
+const quotes = ['really nice', 'good try', 'almost there'];
+console.log(quotes);
+(3) ["really nice", "good try", "almost there"]
+undefined
 
 
 
@@ -385,22 +351,14 @@ const N = [100] => {
 
 // #15 ### Random
 // Given the following array `const randomThings = [1, 10, "Hello", true]`
-
+const randomThings = [1, 10, "Hello", true];
 // 1. how do you access the 1st element in the array?
-
+console.log(randomThings[0])
 // 2. Change the value of `"Hello"` to `"World"`.
-
+randomThings[2] = "World";
 //3. Check the value of the array to make sure it updated the array.
-
-
-
-
-
-
-
-
-
-
+console.log(randomThings)
+(4) [1, 10, "World", true]
 
 
 
@@ -410,7 +368,8 @@ const N = [100] => {
 //const ourClass = ["Gizmo", "Zoom", "Github", "Slack"]`
 
 // 1. What would you write to access the 3rd element of the array?
-
+const ourClass = ["Gizmo", "Zoom", "Github", "Slack"];
+console.log(ourClass[2])
 // 2. Change the value of "Github" to "Octocat"
 
 // 3. Add a new element, "Cloud City" to the array.
