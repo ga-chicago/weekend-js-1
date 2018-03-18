@@ -750,7 +750,14 @@ game.adventurer.weapons[1]
 
 game.orge.health = 0;
 
-// Fairly confident this isnt what you guys were looking for but I wanted to try something. Here I am just interating through my object has the values are needed.
+// Fairly confident this isnt what you guys were looking for but I wanted to try something. Here I am just interating through my object as the values are needed for the fights
+
+
+
+
+
+
+
 
 // EXTRA STUFF
 
@@ -785,6 +792,8 @@ const cat2 = {
 const combineCats = (mama, papa) => {
 
 console.log(mama, papa)
+
+// return (mama, papa)
 
 
 
@@ -828,14 +837,94 @@ const cat2 = {
 
 const combineCats = (mama, papa) => {
 
+let array = [];
+
 // console.log(mama, papa)
-console.log(cat1.name + cat2.name + cat1.breed + "-" + cat2.breed)
+array.push(mama, papa)
+
+
+
+console.log(array)
+
 
 
 
 
 }
 
-combineCats(cat1, cat2)
+combineCats({cat1.name + cat2.name})
+
+
+
+// EXTRA PRACTICE FROM CLASS 
+
+world-object-accessing
+
+
+const world = {
+  places: {
+    northAmerica: ["US", "Canada"],
+    australia: ["Auckland", "Boomerang"]
+  },
+  poets: [
+    {
+      ezraPound: ["the cantos", 'in a station of the metro'],
+      alive: false,
+    },
+    {
+      blake: ['The lily', 'sunflower', 'echoing green', 'lost little girl', 'lost boy'],
+      alive: false
+    },
+    {
+      whitman: ['Stranger', 'beginners', 'I hear america singing'],
+      alive: false
+    }
+  ],
+  food: [
+    {
+      bbq: {
+        pappys: ['smoked meat', 'pulled pork', 'ribs'],
+        rogers: ['mmmm i like food', ' yayyaa thats tasty']
+      },
+      italian: {
+        sinatras: ['my way', 'fly me to the moon', 'singing in the rain'],
+        tuscany: ['wine', 'berries', 'bread', 'cheese']
+      }
+    },
+    {
+      japanese: {
+        ramen: ['tonkotsu', 'egg', 'pork', 'chicken Broth'],
+      }
+    },
+    {
+      clothes: {
+      pajamas: ["nothing", 'long underwear', 't-shirt'],
+      formal: ['tuxedo', {suit1: 'blue', suit2: 'turqoise'}]
+    }
+  }
+
+  ]
+}
+// print turqoise
+
+world.food[2].clothes.formal[1].suit2;
+
+// print singing in the rain
+
+world.food[0].italian.sinatras[2];
+
+// print sunflower
+
+world.poets[1].blake[1];
+
+// print boomerang
+
+world.places.australia[1];
+
+// print beginners
+
+world.poets[2].whitman[1];
+
+
 
 
