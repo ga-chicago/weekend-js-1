@@ -327,12 +327,11 @@ thomsCloset[1][2] = "Footie Pajamas"
 // FUNCTIONS
 // printGreeting
 const printGreeting = (name) => {
-	console.log("Hello there, " + name + "!")
+	return ("Hello there, " + name + "!")
 }
 
 //reverseWordOrder
  const reverseWordOrder = (input) => {
-	// function splitString(input, separator) {
 	let newString = input.split(" ");
 	let reversedString = "";
 	for(i = 0; i < newString.length; i++) {
@@ -342,12 +341,89 @@ const printGreeting = (name) => {
 	return finalString
 }
 
-console.log(reverseWordOrder("Ishmael me Call"))
+// calculate
+const calculate = (num1, num2, operation) => {
+	if(operation === "add") {
+		return num1 + num2;
+	} else if(operation === "sub") {
+		return num1 - num2;
+	} else if(operation === "mult") {
+		return num1 * num2;
+	} else if(operation === "div") {
+		return num1 / num2;
+	} else if(operation === "exp") {
+		return Math.pow(num1, num2);
+	} else {
+		return "Sorry, that's not an operation."
+	}
+}
 
+//1.
+const printCool = (name) => {
+	return name + " is cool."
+}
 
+//2.
+const calculateCube = (num) => {
+	return (num * num * num)
+}
 
+//3.
+const isAVowel = (letter) => {
+	const lowerLetter = letter.toLowerCase();
+	if(lowerLetter === "a" || lowerLetter === "i" || lowerLetter === "o" || lowerLetter	=== "u") {
+		return true
+	} else {
+		return false
+	}
+}
 
+//4.
+let lengths = [];
+const getTwoLengths = (s1, s2) => {
+	lengths[0] = s1.length;
+	lengths[1] = s2.length;
 
+	return lengths;
+}
+
+//5.
+const getMultipleLengths = (arrayOfStrings) => {
+	//need function to create a new array
+	const arrOfLengths = [];
+	//loop through the arrayOfStrings and push each 
+	for(let i = 0; i < arrayOfStrings.length; i++) {
+		arrOfLengths.push(arrayOfStrings[i].length)
+	}
+	return arrOfLengths;
+}
+
+//6.
+const maxOfThree = (num1, num2, num3) => {
+	const largestNum = Math.max(num1, num2, num3)
+	return largestNum
+
+}
+
+//7. 
+const printLongestWord = (arrOfStrings) => {
+	let lgth = 0;
+	let longestString = "";
+
+	for (let i = 0; i < arrOfStrings.length; i++) {
+		if(arrOfStrings[i].length > lgth) {
+			lgth = arrOfStrings[i].length;
+			longestString = arrOfStrings[i]
+		}
+		
+	} return longestString
+}
+
+//8.
+const transmogrify = (n1, n2, n3) => {
+	newNum = n1 * n2;
+	return Math.pow(newNum, n3)
+}
 
 
 
