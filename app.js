@@ -503,13 +503,46 @@ const ogre = {
 	type: "mean"
 }
 
+// Write a very small program that will simulate a battle between your adventurer and an ogre. 
+// You can use the same techniques you used in your landscaping game from the weekend.
+// When your adventurer's hitpoints reach 0 the game is over.
+// When your ogre's hitpoints reach 0 the game is over.
 
 
 
+// EXTRA STUFF
+//1. Mama cat
+const cat1 = {
+	name: "Brady",
+	breed: "bengal",
+	age: 5
+}
 
+// console.log the cat's age
+console.log(cat1.age)
 
+// // console.log the cat's breed
+console.log(cat1.breed)
 
+//2. Papa cat
+// Define an object called cat2 that also contains the properties: name, breed, age (a number)
+const cat2 = {
+	name: "Tom",
+	breed: "tabby",
+	age: 6, 
+}
 
+//3. Combine Cats!
+// Write a function combineCats that has two parameters mama, and papa. 
+// The function will take two arguments -- each a cat object.
+
+const combineCats = (cat1, cat2) => {
+	const cat3 = {};
+	cat3.name = cat2.name + " " + cat1.name
+	cat3.age = 1
+	cat3.breed = cat1.breed + "-" + cat2.breed
+	return cat3
+}
 
 
 
