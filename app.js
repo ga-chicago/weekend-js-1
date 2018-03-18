@@ -6,7 +6,7 @@ const year = 1989;
 
 //2. How do we change the value of a variable?
 //<--- To change the value, you first need to have declared the variable with let. If so, simply type the variables name, include assignment
-//<---  operator, and set new value. Example:
+//<--- operator, and set new value. Example:
 favoriteFood = "pad thai";
 
 //3. How do we assign an existing variable to a new variable?
@@ -424,6 +424,67 @@ const transmogrify = (n1, n2, n3) => {
 	newNum = n1 * n2;
 	return Math.pow(newNum, n3)
 }
+
+
+//OBJECTS
+// List and describe each individual piece of syntax that we use to construct an object. 
+// Don't leave anything out! The list is finite.
+//<--- To construct an object, first declare with either let or const followed by the name of the objects. 
+//<--- next list the assignment operator followed by curly braces. The curly braces are used to list the properties of the
+//<--- objects, or defines the objects. List the key-value pairs to describe the object. A comma follows each key-value pair,
+//<--- except for the last property listed.
+let myObject = {
+	color: "blue",
+	size: "big",
+	height: "tall",
+	age: 45
+}
+
+// Me
+//1. & 2. Create an empy object called me and Assign it properties for name, age, and email with corresponding values.
+const me = {
+	name: "Kristyn",
+	age: 98,
+	email: "kristyn@foo.bar"
+}
+
+//3. Using dot notation, access the name property in your object.
+me.name; //<--- returns "Kristyn"
+
+//4. Without writing directly into the object, update the value of age to be 1000 years old.
+me.age = 1000;
+
+//5. Using dot notation, verify that age has been updated.
+me.age; //<--- returns 1000
+
+//6. 
+me["place of residence"] = "Bloomington";
+
+//7. 
+me["place of residence"]; //<--- returns "Bloomington"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
