@@ -572,6 +572,10 @@ const printLongestWord = (array) => {
 
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
+
+
+
+
 // this return LAST string // NEED HELP WITH THIS 
 
 
@@ -812,13 +816,6 @@ combineCats(cat1, cat2)
 // the breed is each of the parents' breeds with a hyphen in between
 
 
-cat1.name + cat2.name 
-
-age = 1
-
-cat1.breed + "-" + cat2.breed
-
-
 
 const cat1 = {
 	name: "Bob",
@@ -826,7 +823,9 @@ const cat1 = {
 	age: 4
 }
 
+// cat1.name;
 
+// cat1.breed;
 
 const cat2 = {
 	name: "Joe",
@@ -834,19 +833,22 @@ const cat2 = {
 	age: 8
 }
 
-let newName = {cat1.name + cat2.name}
-
 const combineCats = (mama, papa) => {
+const newCat = {};
+newCatName = mama.name + papa.name
+newCatAge = 1;
+newCatBreed = mama.breed + "-" + papa.breed
 
-let newName = cat1.name + cat2.name
+console.log(mama, papa)
 
+return (mama, papa)
 
+// this is more correct but need to fix
 
 
 }
 
-combineCats({cat1.name + cat2.name})
-
+console.log(combineCats(cat1, cat2)
 
 // Could not get this to work. Need to figure out 
 
