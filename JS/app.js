@@ -408,12 +408,13 @@ console.log(maxOfThree(444,98,72));
 // 7
 
 const printLongestWord = (array)=>{
-	newWordArray = [];
+	let newWordArray = [];
 	for(let i = 0; i < array.length; i ++){
 		//to place in list before tie breaker
 		if(newWordArray[array[i].length] !== undefined){
-			newWordArray.splice(newWordArray[array[i].length],0,array[i]);
+			newWordArray.splice(array[i].length,0,array[i]);
 			console.log('There was a tie breaker, but here is the first one.')
+			console.log(newWordArray);
 		}
 		else{
 			newWordArray[array[i].length]=array[i];
