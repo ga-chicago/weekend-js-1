@@ -153,38 +153,21 @@ for(bank_account = 0; bank_account <= 10100; bank_account++) {
 
 
 // MULTIPLES OF 3 AND 5
-// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
+// The sum of these multiples is 23.
 
 // find all the multiples of 3 and 5
 // let multipleOfThree = [].reduce(add, 0);
 // let multipleOfFive = []. reduce(add, 0);
+let sum = 0;
 
-// for(i = 0; i <= 1000; i++) {
-// 	if((i % 5) == 0) {
-// 		multipleOfFive.push(i++);
-// 	} else if((i % 3) == 0) {
-// 		multipleOfThree.push(i++)
-// 	}
-
-// 	const sum = (a, b) => {
-// 		a + b
-// 	}
-// 	const sum = multipleOfThree.reduce(add)
-
-// }
-
-//create a variable to store multiples of 3
-
-//create a variable to store multiples of 5
-
-// add the two variables together
-
-// Possible solution? // let sum = 0;
-// for (i = 1; i < 1000; i++){
-// 	if(i % 3 === 0 || i % 5 === 0){
-// 		console.log(sum += i)
-// 	}
-// }
+for(i = 0; i <= 1000; i++) {
+	if((i % 5) == 0) {
+		sum += i;
+	} else if((i % 3) == 0) {
+		sum += i;
+	}
+}
 
 
 // EASY DOES IT
@@ -506,9 +489,13 @@ const ogre = {
 // Write a very small program that will simulate a battle between your adventurer and an ogre. 
 // You can use the same techniques you used in your landscaping game from the weekend.
 // When your adventurer's hitpoints reach 0 the game is over.
-// When your ogre's hitpoints reach 0 the game is over.
-
-
+const gameOver = (adventurer.hitpoints, ogre.hitpoints) => {
+	if(adventurer.hitpoints === 0) {
+		return "Game over: You lose!"
+	} else if(ogre.hitpoints === 0) {
+		return "Game over: You win!"
+	}
+}
 
 // EXTRA STUFF
 //1. Mama cat
@@ -538,28 +525,13 @@ const cat2 = {
 
 const combineCats = (cat1, cat2) => {
 	const cat3 = {};
-	cat3.name = cat2.name + " " + cat1.name
+	cat3.name = cat2["name"] + " " + cat1["name"]
 	cat3.age = 1
 	cat3.breed = cat1.breed + "-" + cat2.breed
 	return cat3
 }
 
+//4. Cat brain bender
+const moreCats = combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(combineCats(moreCats, moreCats))
