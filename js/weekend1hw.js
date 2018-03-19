@@ -834,18 +834,11 @@ const cat2 = {
 	age: 8
 }
 
+let newName = {cat1.name + cat2.name}
 
 const combineCats = (mama, papa) => {
 
-let array = [];
-
-// console.log(mama, papa)
-array.push(mama, papa)
-
-
-
-console.log(array)
-
+let newName = cat1.name + cat2.name
 
 
 
