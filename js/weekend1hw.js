@@ -572,7 +572,7 @@ const printLongestWord = (array) => {
 
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
-// this return LAST string // FIX THIS FIX THIS  FIX THIS  FIX THIS  FIX THIS  FIX THIS 
+// this return LAST string // NEED HELP WITH THIS 
 
 
 
@@ -847,6 +847,8 @@ let newName = cat1.name + cat2.name
 
 combineCats({cat1.name + cat2.name})
 
+
+// Could not get this to work. Need to figure out 
 
 
 // EXTRA PRACTICE FROM CLASS 
