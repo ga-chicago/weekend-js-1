@@ -1,30 +1,36 @@
 // Conceptual Questions
 // How do we assign a value to a variable?
-// By using 'const' or 'let'
-// How do we change the value of a variable?
-///We cannot redfine 'const' so in this case, use 'let' instead
-// for example: let b = 'apples';
-// b = 'oranges'
-// How do we assign an existing variable to a new variable?
-//
+// By using 'const' or 'let' or 'var'. However, it is best to use 'const' in most
+//situations as the value cannot be redifined.
+const animal = "mini pig"
+let size = "tiny"
+var age = 2
 
-// // Strings
-// // Create a variable called firstVariable.
-// const firstVariable = "string";
-//
-// // assign it the value of a string => "Hello World"
-//
-//
-// // change the value of this variable to a number.
-// firstVariable(3)
-//
-// // store the value of firstVariable into a new variable called secondVariable
-// const secondVariable = firstVariable
-//
-// // change the value of secondVariable to a string.
-// secondVariable(firstVariable += "")
-// // What is the value of firstVariable?
-// "3"
+// How do we change the value of a variable?
+///We cannot redfine the value of 'const' but can redefine the values of let and var:
+let size = "still tiny, but growing"
+var age = 3
+
+// How do we assign an existing variable to a new variable?
+const animal = pet;
+
+//Strings
+//Create a variable called firstVariable.
+// assign it the value of a string => "Hello World"
+let firstVariable = "Hello World";
+
+// change the value of this variable to a number.
+firstVariable = 88;
+
+// store the value of firstVariable into a new variable called secondVariable
+let secondVariable = firstVariable
+
+//change the value of secondVariable to a string.
+
+secondVariable = "string";
+
+//What is the value of firstVariable?
+"88"
 
 // Create a variable called yourName and set it equal to your name as a string.
 // Write an expression that takes the string "Hello, my name is "
@@ -125,28 +131,33 @@ for(let i = 1; i <= 100; i++) {
 // Write code that will save the sum of all the numbers
 // between 1 - 10 to a variable called bank_account.
 
-// const bankAccount = (num) => {
-//   for(i = 0; i <= 10; i++){
-//
-//   }
-// }
+let bank_account = 0;
+for (let i = 1; i <= 10; i++) {
+    bank_account += i;
+}
+
+// You got a bonus! Your pay is now doubled each week.
+// Write code that will save the sum of
+//all the numbers between 1 - 100 multiplied by 2.
+let bank_account = 0;
+for (let i = 1; i <= 100; i++) {
+  bank_account += 2*i
+}
 
 //Multiples of 3 & 5// NOT FINISHED
-// const sum = (arr) => {
-// for (let i = 0; i <= 10; i++) {
-//   if([i] % 5 === 0) {
-//     //RETURN SOMETHING?
-//     return [i]
-//   } else if([i] % 3 === 0) {
-//     return [i]
-//   } else {
-//   }
-// }
-// const arrSum = sum => {
-//
-// }
+//If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
+//The sum of these multiples is 23.
+//Find the sum of all the multiples of 3 or 5 below 1000.
 
-//const arrSum = arr => arr.reduce((a,b) => a + b, 0)
+let sum = 0;
+
+for (let i = 0; i < 1000; i++) {
+  if (i % 3 === 0) {
+    sum += i;
+    } else if(i % 3 === 0) {
+      sum += i;
+    }
+  }
 
 // Easy Does It
 // Create an array that contains three quotes and store it
@@ -453,3 +464,62 @@ monster.age = 6
 //console.log the object to make sure type is creature, and age is 6
 monster
 {name: "Slimer", color: "greenish", type: "creature", age: 6}
+
+
+//Ogres
+// how would you model your adventurer? Your adventurer will want a name and hitpoints.
+//What else would your adventurer need?
+const adventurer = {
+  name: "Jen"
+  hitpoints: 2020
+
+}
+// how would you model an ogre? Your ogre will want hitpoints.
+//
+// Write a very small program that will simulate a battle between your adventurer and an ogre. You can use the same techniques you used in your landscaping game from the weekend.
+//
+// When your adventurer's hitpoints reach 0 the game is over.
+// When your ogre's hitpoints reach 0 the game is over.
+// If you want to provide input to the game, you can run it in the Chrome console
+//(but that isn't strictly necessary for now).
+
+//EXTRA STUFF
+// Cat Combinator
+// 1. Mama cat
+// Define an object called cat1 that contains the following properties:
+// name
+// breed
+// age (a number)
+const cat1 = {
+  name: "Sweet Pea",
+  breed: "Scottish Fold",
+  age: 12
+}
+// console.log the cat's age
+console.log(cat1.name);
+// console.log the cat's breed
+console.log(cat1.breed);
+
+//2. Papa cat
+//Define an object called cat2 that also contains the properties:
+const cat2 = {
+  name: "Krinkle",
+  breed: "Maine Coon",
+  age: 8
+}
+
+const combineCats = (mama, papa) => {
+  const newCat = {};
+  newCat.name = mama.name + papa.name;
+  newCat.age = 1;
+  newCat.breed = mama.breed + "-" + papa.breed;
+  return newCat;
+}
+console.log(combineCats(cat1, cat2));
+
+//Write a console.log that is three levels deep of combineCats.
+//combineCats should have two arguments, each which are combineCats
+//each which have two arguments, each which are combineCats.
+console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+
+console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
