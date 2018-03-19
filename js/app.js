@@ -445,11 +445,24 @@ console.log(num){
 
 // 1. console.log `little number` if the number entered is less than **5**.<br>
 
-// 2.  If the number entered is more than 10, log `big number`.
-
+// 2.  If t
 // 3. Otherwise, console.log "monkey". <br>
+const n = (0) {
+  if (a > 5) {
+    return "little number";
+  } else {
+    return "monkey";
+  }
+}
 
- ### What's in Your Closet?
+console.log(n(8));
+ 
+
+
+
+
+ //### What's in Your Closet?he number entered is more than 10, log `big number`.
+
 
 // Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
 
@@ -526,7 +539,8 @@ const printGreeting = (name) => {
 }
 console.log(printGreeting("Slimer"))
 //with the argument **interpolated** into the greeting.
-
+const printGreeting = (str1) => {
+  console.log("Hello there " + str1 + '!')
 // ```javascript
 // console.log(printGreeting("Slimer"));
 // ```
@@ -612,16 +626,20 @@ const printCool = (name) => {
 // Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
 // console.log(calculateCube(5));
 // > => 125
-
-
+const Volume = length * length * length;
+    console.log(Volume)
 
 // # 3
 // Write a function `isAVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel, 
 //false otherwise. The vowel could be upper or lower case.
 // console.log(isAVowel("a"));
 // > => true
-
-
+const isAVowel = (str) => }
+  if(str1 === vowel){
+    return true
+  } else {
+    return false
+}
 
 
 
@@ -631,14 +649,37 @@ const printCool = (name) => {
 //The function should return an _array_ of numbers where each number is the length of the corresponding string.
 // console.log(getTwoLengths("Hank", "Hippopopalous"));
 // > => [4, 13]
+const getTwoLengths = (str1, str2) => {
+  console.log(getTwoLengths)
 
-
+}
+for(i = 0; i = getTwoLengths.length;)
+  /////////////////////////////// I was trying all weekend I still have trouble on some of them
+const getTwoLengths = (str1, str2) => {
+  console.log(getTwoLengths)
+  
+}
+undefined
+console.log(getTwoLengths("Hank", "Hippopopalous"));
+VM41:2 (str1, str2) => {
+  console.log(getTwoLengths)
+  
+}
+VM51:1 undefined
+undefined
+getTwoLengths("Hank", "Hippopopalous");
+VM41:2 (str1, str2) => {
+  console.log(getTwoLengths)
+  
+}
 // # 5 
 // Write a function `getMultipleLengths` that accepts a single parameter as an argument:
 // an **array** of **strings**. The function should return an array of **numbers** 
 //where each number is the length of the corresponding string.
 // console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
 // > => [5, 4, 2, 2, 4]
+const getMultipleLengths = ["hello", "what", "is", "up", "dude"];
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
 
 
 
@@ -658,7 +699,13 @@ const printCool = (name) => {
 //In case of a tie, the method should return the word that appears first in the array.
 // console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 // > => "Peanutbutter"
+const longestWord = () => {
 
+}
+//
+const find_longest_word(text):
+   const longest_word = max(text.split(), key = len)
+    return longest_word, len(longest_word)
 
 // # 8
 
@@ -674,15 +721,18 @@ const printCool = (name) => {
 // ```
 
 // > => 225
+const transmogrifier = (num1, num2, num3) => {
+    return (num1 * num2) ** num3
+};
 
-
+transmogrifier(5, 3, 2)     
 
 // ### Objects
 
 // ## Syntax
 
 // List and describe each individual piece of syntax that we use to construct an object. Don't leave anything out! The list is finite.
-
+const and the let statement declares a block scope
 // Example:
 
 // ```
@@ -694,9 +744,14 @@ const printCool = (name) => {
 
 // ## Me
 
-// 1. Create an empty object called `me`.<br>
+// 1. Create an empty object called `me`.
 // 2. Assign it properties for **name**, **age**, and **email** with corresponding values.<br>
-
+const me = {
+  name: "Noemi",
+  age: 31,
+  email: nlll02@yahoo.com
+}
+console.log(me);
 // The object would look something like this if we console logged it:
 
 // ```javascript
