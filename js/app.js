@@ -612,11 +612,9 @@ console.log(calculate(4, 3, "exp"));
 // console.log(printCool("Captain Reynolds"));
 // > => "Captain Reynolds is cool";
 const printCool = (name) => {
-  printCool(Captain Reynolds)
-  console.log('Hello my name is' + name)
+  console.log(name + ' ' + "is cool")
 }
-
-
+printCool('Captain Reynolds');
 
 
 
@@ -650,28 +648,12 @@ const isAVowel = (str) => }
 // console.log(getTwoLengths("Hank", "Hippopopalous"));
 // > => [4, 13]
 const getTwoLengths = (str1, str2) => {
-  console.log(getTwoLengths)
+  console.log(str1 + ' ' + str2)
 
 }
-for(i = 0; i = getTwoLengths.length;)
-  /////////////////////////////// I was trying all weekend I still have trouble on some of them
-const getTwoLengths = (str1, str2) => {
-  console.log(getTwoLengths)
-  
-}
-undefined
-console.log(getTwoLengths("Hank", "Hippopopalous"));
-VM41:2 (str1, str2) => {
-  console.log(getTwoLengths)
-  
-}
-VM51:1 undefined
-undefined
 getTwoLengths("Hank", "Hippopopalous");
-VM41:2 (str1, str2) => {
-  console.log(getTwoLengths)
-  
-}
+
+
 // # 5 
 // Write a function `getMultipleLengths` that accepts a single parameter as an argument:
 // an **array** of **strings**. The function should return an array of **numbers** 
@@ -682,16 +664,19 @@ const getMultipleLengths = ["hello", "what", "is", "up", "dude"];
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
 
 
-
-
-
 // # 6
 // Define a function `maxOfThree` that takes three numbers as arguments and returns the largest of them. 
 //If all numbers are the same, it doesn't matter which one is returned.
 // If the two largest numbers are the same, one of them should be returned.
 // console.log(maxOfThree(6, 9, 1));
 // > => 9
-
+const maxOfThree = (num1, num2, num3) =>{
+  if(num1 < num2){
+    return num2;
+  } else if(num2 < num3){
+    return num3 
+  } else {
+maxOfThree(1, 5, 8);
 
 // # 7
 // Write a function `printLongestWord` that accepts a single argument, an **array** of **strings**. 
@@ -699,14 +684,14 @@ console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
 //In case of a tie, the method should return the word that appears first in the array.
 // console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 // > => "Peanutbutter"
-const longestWord = () => {
-
+const longestWord = (array) => {
+console.log()
+let newArray = []
+for(let i = 0; i < array.length; i++)
+  if(newArray[array[i].length] !== undefined)
+   const longest_word = max(text.split(), key = length)
+    return longest_word, length(longest_word)
 }
-//
-const find_longest_word(text):
-   const longest_word = max(text.split(), key = len)
-    return longest_word, len(longest_word)
-
 // # 8
 
 // Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
@@ -746,11 +731,11 @@ const and the let statement declares a block scope
 
 // 1. Create an empty object called `me`.
 // 2. Assign it properties for **name**, **age**, and **email** with corresponding values.<br>
-const me = {
+const me = [
   name: "Noemi",
   age: 31,
-  email: nlll02@yahoo.com
-}
+  email: 'nlll02@yahoo.com'
+]
 console.log(me);
 // The object would look something like this if we console logged it:
 
