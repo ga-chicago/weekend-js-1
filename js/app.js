@@ -429,14 +429,18 @@ VM99:2 (4) [5, 10, 500, 20]
 undefined
 
 
-// ### Biggie Smalls
+### Biggie Smalls
 // Write an `if..else` statement:
-
 // 1. console.log `little number` if the number is entered is less than **100**
-
 // 2. If the number entered is 100 or more, alert `big number`.
-
-// ### Monkey in the Middle
+const num = 0;
+console.log(num){
+  if (num < 100)
+    console.log(`little number`){
+    }else if(num > 100)
+    alert(`big number`)
+}
+### Monkey in the Middle
 // Write an `if...else if...else` statement:
 
 // 1. console.log `little number` if the number entered is less than **5**.<br>
@@ -445,7 +449,7 @@ undefined
 
 // 3. Otherwise, console.log "monkey". <br>
 
-// ### What's in Your Closet?
+ ### What's in Your Closet?
 
 // Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
 
@@ -500,6 +504,7 @@ kristynsCloset
 console.log(thomsCloset)
 // 6. In the same way, access one item from Thom's pants array.
 
+
 // 7. Access one item from Thom's accessories array.
 
 // 8. Log a sentence about what Thom's wearing. Example: `"Thom is looking fierce in a grey button-up, jeans and wool scarf!"`
@@ -512,32 +517,39 @@ console.log(thomsCloset)
 
 // ### printGreeting
 
-// Write a function called `printGreeting` with a parameter `name` that returns a greeting with the argument **interpolated** into the greeting.
+// Write a function called `printGreeting` with a parameter `name` that returns a greeting 
+const printGreeting = (name) => {
+  console.log(printGreeting)
+  for (var i = printGreeting.length - 1; i >= 0; i--) {
+    printGreeting[i]
+  }
+}
+console.log(printGreeting("Slimer"))
+//with the argument **interpolated** into the greeting.
 
 // ```javascript
 // console.log(printGreeting("Slimer"));
 // ```
-
 // > => Hello there, Slimer!
-
 // <br>
 // <hr>
 
 // ### reverseWordOrder
 
-// Write a function `reverseWordOrder` that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation.
+// Write a function `reverseWordOrder` that accepts a single argument, a string.
+// The function should return a string with the order of the words reversed. Don't worry about punctuation.
 
-// ```javascript
+const reverseWordOrder = (str) => {
+  const splitString = str.split(" ");
+  const reverseArray = splitString.reverse();
+  return joinArray = reverseArray.join(" ");
+
+}
+console.log(reverseWordOrder("Ishmael me call"));
 // console.log(reverseWordOrder("Ishmael me Call"));
-// ```
-
-// > => "Call me Ishmael"
-
-
-// ```
+console.log(reverseWordOrder("I use Lâncome on my comb"));
 // console.log(reverseWordOrder("I use Lâncome on my comb"));
-// ```
-
+// > => "Call me Ishmael"
 // > => "comb my on Lâncome use I"
 
 
@@ -545,109 +557,106 @@ console.log(thomsCloset)
 // <hr>
 
 // ### calculate
-
 // Write a function called `calculate`.
-
 // This function should take three arguments, two numbers and a string.
-
 // Name the parameters `num1`, `num2`, and `operation`.
-
 // If the function receives the string "add" for the operation parameter, it will return the sum of num1 and num2.
-
 // If the function receives the string "sub" for the operation parameter, it will return num1 minus num2.
-
 // Do the same thing for multiplication "mult", division "div", and exponent "exp" (where num2 is the exponent of num1).
-
 // ```javascript
 // console.log(calculate(4, 3, "sub"));
-
 // => 1
-// ```
-
-// ```javascript
 // console.log(calculate(4, 3, "exp"));
-
 // => 64
-// ```
+const calculate = (num1, num2, operation) => {
+  if(operation === 'add') {
+    return num1 + num2
+  }
+  else if(operation === 'sub') {
+    return num1 - num2
+   }
+   else if(operation === 'multiply'){
+    return num1 * num2
+   }
+   else if(operation === 'div'){
+    return num1 / num2
+   }
+   else if(operation === 'exp'){
+    return num1 ** num2
+   } else {
 
-// <br>
-// <hr>
+   }
 
-
+}
+console.log(calculate(4, 3, "sub"));
+1
+console.log(calculate(4, 3, "exp"));
+64
 // # 1 
-
-// Write a function `printCool` that accepts one parameter, `name` as an argument. The function should print the name and a message saying that that person is cool.
-
-// ```javascript
+// Write a function `printCool` that accepts one parameter, `name` as an argument. 
+//The function should print the name and a message saying that that person is cool.
 // console.log(printCool("Captain Reynolds"));
-// ```
-
 // > => "Captain Reynolds is cool";
+const printCool = (name) => {
+  printCool(Captain Reynolds)
+  console.log('Hello my name is' + name)
+}
+
+
+
+
+
+
 
 // # 2
-
 // Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
-
-// ```javascript
 // console.log(calculateCube(5));
-// ```
-
 // > => 125
 
 
+
 // # 3
-
-// Write a function `isAVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
-
-// ```javascript
+// Write a function `isAVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel, 
+//false otherwise. The vowel could be upper or lower case.
 // console.log(isAVowel("a"));
-// ```
-
 // > => true
 
 
+
+
+
+
 // # 4
-
-// Write a function `getTwoLengths` that accepts two parameters (strings). The function should return an _array_ of numbers where each number is the length of the corresponding string.
-
-// ```javascript
+// Write a function `getTwoLengths` that accepts two parameters (strings). 
+//The function should return an _array_ of numbers where each number is the length of the corresponding string.
 // console.log(getTwoLengths("Hank", "Hippopopalous"));
-// ```
-
 // > => [4, 13]
 
 
 // # 5 
-
-// Write a function `getMultipleLengths` that accepts a single parameter as an argument: an **array** of **strings**. The function should return an array of **numbers** where each number is the length of the corresponding string.
-
-
-// ```javascript
-// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
-// ```
-
+// Write a function `getMultipleLengths` that accepts a single parameter as an argument:
+// an **array** of **strings**. The function should return an array of **numbers** 
+//where each number is the length of the corresponding string.
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
 // > => [5, 4, 2, 2, 4]
 
 
+
+
+
 // # 6
-
-// Define a function `maxOfThree` that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
-
-// ```javascript
+// Define a function `maxOfThree` that takes three numbers as arguments and returns the largest of them. 
+//If all numbers are the same, it doesn't matter which one is returned.
+// If the two largest numbers are the same, one of them should be returned.
 // console.log(maxOfThree(6, 9, 1));
-// ```
-
 // > => 9
 
 
 // # 7
-
-// Write a function `printLongestWord` that accepts a single argument, an **array** of **strings**. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
-
-// ```javascript
+// Write a function `printLongestWord` that accepts a single argument, an **array** of **strings**. 
+//The method should return the longest word in the array. 
+//In case of a tie, the method should return the word that appears first in the array.
 // console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
-// ```
-
 // > => "Peanutbutter"
 
 
@@ -768,8 +777,11 @@ console.log(thomsCloset)
 
 // The cats are multiplying!
 
-// Write a function `combineCats` that has two parameters `mama`, and `papa`. The function will take two arguments -- each a cat object.
-
+// Write a function `combineCats` that has two parameters `mama`, and `papa`. 
+//The function will take two arguments -- each a cat object.
+const combineCats = (cat1, cat2) => {
+  console.log(combineCats(cat1, cat2));
+}
 // * Pass `cat1` and `cat2` as arguments to the `combineCats` function. The function should console.log them.
 
 // Example:
