@@ -45,7 +45,8 @@ let yourName = ("Noemi")
  console.log(yourName);
 //- Write an expression that takes the string 
 //"Hello, my name is " and the variable `yourName` 
-console.log("Hello my name is" + ' ' + 'Noemi');
+console.log("Hello my name is" + ' ' + yourName);
+
 //so that it returns a new string with them concatenated. 
 //>ex: `Hello, my name is Jean Valjean`
 ///////////////////////////
@@ -53,7 +54,7 @@ let yourName = ("Noemi")
  console.log(yourName);
 Noemi
 undefined
-console.log("Hello my name is" + ' ' + 'Noemi');
+console.log("Hello my name is" + ' ' + yourName);
 Hello my name is Noemi
 undefined
   //funt 2 parameter 1 with a string an one name
@@ -891,6 +892,27 @@ const combineCats = (cat1, cat2) => {
 
 // <br>
 // <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
