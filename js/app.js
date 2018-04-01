@@ -235,8 +235,8 @@ for(let i = 0; i <= 4000; i = i + 2) {
 const num = [];
 for(let i=0; i <= 100; i++){
   console.log(num[i])
-  if (numb[i] %2 === 0){
-    console.log(numb[i] + "is even")
+  if (num[i] %2 === 0){
+    console.log(num[i] + "is even")
     else{
       console.log(numb[i] + 'is odd')
 
@@ -253,23 +253,21 @@ for(let i=0; i <= 100; i++){
 
 // >Example Output:
 // ```
-function solution(number) {
-   let num = 0;
-    for (let i = 0; i < number; i++)
-    {
-      if (i % 3 === 0)
+function solution(number){
+  let num = 0;
+    for (let i = 0; i < 100; i++)
+    
+      if (i % 5 === 0){
         console.log("I found a `number` High five!") 
-      else if(i % 5 === 0)
-        console.log()
-        {
-        
-
+     
+}
+  
 // I found a 5. High five!
 // I found a 10. High five!
-const N = [100] => {
- for (i % 2; i = 0){
-  console.log(i + "I found a `number`. High five!");
-}  
+// const N = [100] => {
+//  for (i % 2; i = 0){
+//   console.log(i + "I found a `number`. High five!");
+// }  
 
 // 2) Add to the code from above to print out 
 //"I found a `number`. Three is a crowd" if the number is a multiple of three.
@@ -282,6 +280,17 @@ const N = [100] => {
 // I found a 9. Three is a crowd
 // I found a 10. High five!
 
+ let num = 0; 
+ for (let i = 0; i < 100; i++){
+    if (i % 5 === 0) {
+      console.log("I found a `number` High five!");
+    }
+    if (i % 3 === 0){
+      console.log("I found a `number`. Three is a crowd");
+    }
+}
+
+  
 
 
 
@@ -294,13 +303,20 @@ const N = [100] => {
 //between 1 - 100 multiplied by 2.
 // >Check your work! Your banck_account should have $10,100 in it.
 
-let bank_account = [0];
+let bank_account = 0;
 let sum = (num1, num2) => {
   console.log(sum)
-bank_account = sum;
+  bank_account = sum;
 }
-for (i =0; i < 55; i++);
-if(i <= 55) 
+for (i =0; i <= 10; i++) {
+  bank_account += i;
+
+}
+console.log(bank_account)
+for (i =1; i <= 100; i++) {
+  bank_account += 1*2;
+}
+console.log(bank_account);
 
 
 
@@ -401,6 +417,7 @@ console.log( myArray)
 console.log( myArray.shift() );
 console.log( myArray );
 // 5. use the reverse method on this array
+myArray.reverse();
 
 
 //////////////////////////////////////////
@@ -448,15 +465,19 @@ console.log(num){
 
 // 2.  If t
 // 3. Otherwise, console.log "monkey". <br>
-const n = (0) {
-  if (a > 5) {
-    return "little number";
-  } else {
-    return "monkey";
+const n = 0;
+  if (n > 5) {
+    console.log("little number");
   }
-}
+  else if (n > 10) {
+    console.log('big number');
+  }
+  else {
+    console.log('monkey')
+  }
 
-console.log(n(8));
+
+console.log(n);
  
 
 
@@ -504,44 +525,42 @@ console.log(thomsCloset)
 // log the sentence "Kristyn is rocking that " + *the third item in Kristyn's closet* + " today!" to the console.
 console.log("Kristyn is rocking that " + (kristynsCloset[2]) + " today!")
 // 2. Kristyn can't find her left shoe. Remove this item from her closet and save it to a variable named `kristynShoe`.
-console.log( kristynsCloset.shift() ); 
-const kristynsShoe = [];
+
+const kristynsShoe = kristynsCloset.shift();
 
 // 3. Kristyn just bought some sweet shades! Add `"raybans"` to her closet **after `"yellow knit hat"`.**
 kristynsCloset.push("raybans");
 
 // 4. Kristyn spilled coffee on her hat... modify this item to read `"stained knit hat"` instead of yellow.
 kristynsCloset[4] = ["stained knit hat"];
-kristynsCloset
+
 
 // 5. Put together an outfit for Thom! Using **bracket notation**, access the first element in Thom's `shirts` array.
 console.log(thomsCloset)
+const thomsShirt = thomsCloset[0] [0];
 // 6. In the same way, access one item from Thom's pants array.
-
+const thomsPants = thomsCloset[1] [2];
 
 // 7. Access one item from Thom's accessories array.
-
+const thomsAccess = thomsCloset[2] [0];
 // 8. Log a sentence about what Thom's wearing. Example: `"Thom is looking fierce in a grey button-up, jeans and wool scarf!"`
-
-// 9. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to `Footie Pajamas`.
-
+console.log('Thom is looking fierce in a ' + thomsShirt + ", " + thomsPants + "," + thomsAccess + "!");
+// 9. Get more specific about what kind of PJs Thom's wearing this winter. 
+//Modify the name of his PJ pants to `Footie Pajamas`.
+thomsCloset[1] [2] = "Footie Pajamas";
+thomsPants = "Footie Pajamas";
 
 // ## Functions
 
 
 // ### printGreeting
 
-// Write a function called `printGreeting` with a parameter `name` that returns a greeting 
+// Write a function called `printGreeting` 
+//with a parameter `name` that returns a greeting 
 const printGreeting = (name) => {
-  console.log(printGreeting)
-  for (var i = printGreeting.length - 1; i >= 0; i--) {
-    printGreeting[i]
-  }
-}
-console.log(printGreeting("Slimer"))
+  console.log("Hello there, " + name + "!")
+
 //with the argument **interpolated** into the greeting.
-const printGreeting = (str1) => {
-  console.log("Hello there " + str1 + '!')
 // ```javascript
 // console.log(printGreeting("Slimer"));
 // ```
@@ -598,9 +617,7 @@ const calculate = (num1, num2, operation) => {
    }
    else if(operation === 'exp'){
     return num1 ** num2
-   } else {
-
-   }
+   } 
 
 }
 console.log(calculate(4, 3, "sub"));
@@ -613,7 +630,8 @@ console.log(calculate(4, 3, "exp"));
 // console.log(printCool("Captain Reynolds"));
 // > => "Captain Reynolds is cool";
 const printCool = (name) => {
-  console.log(name + ' ' + "is cool")
+ const strName = name + ' ' + "is cool";
+ console.log(strName)
 }
 printCool('Captain Reynolds');
 
@@ -633,15 +651,14 @@ const Volume = length * length * length;
 //false otherwise. The vowel could be upper or lower case.
 // console.log(isAVowel("a"));
 // > => true
-const isAVowel = (str) => }
-  if(str1 === vowel){
-    return true
-  } else {
-    return false
+const isAVowel = (str) => {
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
 }
-
-
-
+  if(str1 === vowel){
+    return true;
+  } else {
+    return false;
+}
 
 // # 4
 // Write a function `getTwoLengths` that accepts two parameters (strings). 
@@ -690,7 +707,7 @@ console.log()
 let newArray = []
 for(let i = 0; i < array.length; i++)
   if(newArray[array[i].length] !== undefined)
-   const longest_word = max(text.split(), key = length)
+   // const longest_word = max(text.split(), key = length)
     return longest_word, length(longest_word)
 }
 // # 8
@@ -707,84 +724,99 @@ for(let i = 0; i < array.length; i++)
 // ```
 
 // > => 225
-const transmogrifier = (num1, num2, num3) => {
-    return (num1 * num2) ** num3
-};
+const transmogrify = (num1, num2, num3) => {
+    return Math.pow(num1 * num2, num3);
+}
 
-transmogrifier(5, 3, 2)     
+transmogrify(5, 3, 2)     
 
 // ### Objects
 
 // ## Syntax
 
-// List and describe each individual piece of syntax that we use to construct an object. Don't leave anything out! The list is finite.
-const and the let statement declares a block scope
-// Example:
+// List and describe each individual piece of syntax 
+//that we use to construct an object. 
+//Don't leave anything out! The list is finite.
 
-// ```
+
+
+// #1 const and the let statement declares a block scope
 // {} curly braces define the object.
-// ```
+// : this separates properties from their value
 
-// <br>
-// <hr>
 
 // ## Me
 
 // 1. Create an empty object called `me`.
 // 2. Assign it properties for **name**, **age**, and **email** with corresponding values.<br>
-const me = [
+const me = {
   name: "Noemi",
   age: 31,
   email: 'nlll02@yahoo.com'
-]
+}
 console.log(me);
 // The object would look something like this if we console logged it:
 
 // ```javascript
 // console.log(me);
-// ```
-
+// ``
 // > => {name: "Kristyn", age: 98, email: "kristyn@foo.bar"}
-
-
 // 3. Using dot notation, access the **name** property in your object.<br>
-// 4. Without writing directly into the object, update the value of **age** to be 1000 years old.<br>
+  console.log(me.name);
+// 4. Without writing directly into the object, 
+//update the value of **age** to be 1000 years old.<br>
+me.age = 1000;
 // 5. Using dot notation, verify that **age** has been updated.<br>
-// 6. Add a key to this object called: "place of residence" and give it a value of your hometown. Note that the key has spaces, therefore you cannot use dot notation.
+console.log(me.age)
+// 6. Add a key to this object called: "place of residence" and 
+//give it a value of your hometown. Note that the key has spaces, 
+//therefore you cannot use dot notation.
+me['place of residence'] = "Chicago";
 // 6. Access the value of "place of residence"<br>
-
+console.log(me['place of residence']);
 // <br>
 // <hr>
 
 // ## Slimer
 
 // ```javascript
-// const monster = {
-//    name: "Slimer",
-//    color: "greenish",
-//    type: "plasm or ghost or something"
-// }
-// ```
+const monster = {
+   name: "Slimer",
+   color: "greenish",
+   type: "plasm or ghost or something"
+}
 
 // * Given the **slimer** object:
 //     - What would you write to access the `name` and console.log it?
-//     - What would you write to change the `type` to 'creature' (without changing it inside the object)
-//     - What would you write to add a key to the object called `age`, and set the age to 6?
-//     - console.log the object to make sure `type` is creature, and `age` is 6
-
+console.log(monster.name)
+//     - What would you write to change the `type` to 'creature' 
+//(without changing it inside the object)
+monster.type = "creature";
+//     - What would you write to add a key to the object 
+//called `age`, and set the age to 6?
+monster.age = 6;
+//     - console.log the object to make sure 
+//`type` is creature, and `age` is 6
+console.log(monster)
 // <br>
 // <hr>
 
 // ## Ogres
 
-// Let's say you want to make an adventure game where you are an adventurer and you are going to fight **ogres**.
+// Let's say you want to make an adventure game where you are 
+//an adventurer and you are going to fight **ogres**.
 
 // Using **objects**, create **models** and have them interact.
 
-// * how would you model your `adventurer`? Your adventurer will want a **name** and **hitpoints**. What else would your adventurer need?
+// * how would you model your `adventurer`? Your adventurer will 
+//want a **name** and **hitpoints**. What else would your adventurer need?
 // * how would you model an `ogre`? Your ogre will want **hitpoints**.
 
-// * Write a very small program that will simulate a battle between your adventurer and an ogre. You can use the same techniques you used in your **landscaping** game from the weekend.
+// * Write a very small program that will simulate a battle 
+//between your adventurer and an ogre. You can use the same techniques 
+//you used in your **landscaping** game from the weekend.
+
+
 //   * When your adventurer's hitpoints reach 0 the game is over.
 //   * When your ogre's hitpoints reach 0 the game is over.
 
@@ -798,32 +830,43 @@ console.log(me);
 // ## Cat Combinator
 
 // ### 1. Mama cat
-// * Define an object called `cat1` that contains the following properties:
+// * Define an object called `cat1`
+// that contains the following properties:
 //   * name
 //   * breed
 //   * age (a number)
-
+const cat1 = {
+  name: 'Elisa',
+  breed: "syberian"
+  age: 4
+}
 // * console.log the cat's age
 // * console.log the cat's breed
-
+console.log(cat1.age)
+console.log(cat1.breed)
 
 // ### 2. Papa cat
 // * Define an object called `cat2` that also contains the properties:
 //   * name
 //   * breed
 //   * age (a number)
-
-
+const cat2 = {
+name: 'Tommy',
+breed: 'persian',
+age: 5
+}
 // ### 3. Combine Cats!
 
 // The cats are multiplying!
 
-// Write a function `combineCats` that has two parameters `mama`, and `papa`. 
+// Write a function `combineCats` that has two 
+//parameters `mama`, and `papa`. 
 //The function will take two arguments -- each a cat object.
 const combineCats = (cat1, cat2) => {
   console.log(combineCats(cat1, cat2));
 }
-// * Pass `cat1` and `cat2` as arguments to the `combineCats` function. The function should console.log them.
+// * Pass `cat1` and `cat2` as arguments to the `combineCats` function.
+// The function should console.log them.
 
 // Example:
 
